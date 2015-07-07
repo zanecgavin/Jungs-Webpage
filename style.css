@@ -1,0 +1,73 @@
+/*! */
+/*!
+ * Jung's Research Group Style Sheet
+ *
+ *
+ */
+/*! */
+
+
+
+body {
+    position:relative;
+    left:10px;
+    background-color:blue;
+}
+
+
+
+/*!STYLE_SHEET_START_*/
+/*! */
+nav a {
+    color: #5a5a5a;
+    font-size: 20px;
+    font-family:'Jockey One',sans-serif;
+    font-weight: bold;
+    padding: 14px 10px;
+    text-transform: uppercase;
+}
+
+/*!JUMBOTRON*/
+/*!LINKS_TO/FORMATS_BACKGROUND_IMAGES*/
+jumbotron {
+    background-image: url('images/background/NU_LOGO.jpg'), url('images/background/VACNT.jpg');
+    background-position: bottom right, left top;
+    background-size: 11.9%, cover;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+}
+
+
+/*!JUMBOTRON_H1*/
+jumbotron h1 {
+    color: #FFFFFF;
+    font-size: 48px;
+    font-family: 'Jockey One',sans-serif;
+    font-weight: bold;
+}
+
+/*!PTEXT*/
+p-text {
+    font-family:'Bree Serif',serif;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+/*!col-md-2*/
+/*!
+.col-md-2 {
+    
+    margin-left: 15px;
+    
+}
+.row {
+    padding: 0 4px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+*/
+
+
+
+/*!STYLE_SHEET_END_*/
+

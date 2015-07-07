@@ -1,0 +1,88 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		473C5A031B1FE197004A798D /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		473C5A061B1FE2FD004A798D /* Research.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Research.html; sourceTree = "<group>"; };
+		473C5A071B1FE313004A798D /* Members.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Members.html; sourceTree = "<group>"; };
+		473C5A081B1FE324004A798D /* Publications.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Publications.html; sourceTree = "<group>"; };
+		473C5A091B1FE335004A798D /* Sponsors.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Sponsors.html; sourceTree = "<group>"; };
+		473C5A0A1B1FE4D8004A798D /* bootstrap.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = bootstrap.css; sourceTree = "<group>"; };
+		473C5A0B1B1FE529004A798D /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		4783FD621B2139A600AA7D88 /* copyright.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = copyright.html; sourceTree = "<group>"; wrapsLines = 1; };
+		4783FD641B213A1300AA7D88 /* Jumbotron.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Jumbotron.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		473C59FC1B1FDFAE004A798D = {
+			isa = PBXGroup;
+			children = (
+				4783FD641B213A1300AA7D88 /* Jumbotron.html */,
+				4783FD621B2139A600AA7D88 /* copyright.html */,
+				473C5A0B1B1FE529004A798D /* style.css */,
+				473C5A0A1B1FE4D8004A798D /* bootstrap.css */,
+				473C5A091B1FE335004A798D /* Sponsors.html */,
+				473C5A081B1FE324004A798D /* Publications.html */,
+				473C5A071B1FE313004A798D /* Members.html */,
+				473C5A061B1FE2FD004A798D /* Research.html */,
+				473C5A031B1FE197004A798D /* index.html */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		473C59FD1B1FDFAE004A798D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+			};
+			buildConfigurationList = 473C5A001B1FDFAE004A798D /* Build configuration list for PBXProject "JungsResearchGroup" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 473C59FC1B1FDFAE004A798D;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		473C5A011B1FDFAE004A798D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		473C5A021B1FDFAE004A798D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		473C5A001B1FDFAE004A798D /* Build configuration list for PBXProject "JungsResearchGroup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				473C5A011B1FDFAE004A798D /* Debug */,
+				473C5A021B1FDFAE004A798D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 473C59FD1B1FDFAE004A798D /* Project object */;
+}
