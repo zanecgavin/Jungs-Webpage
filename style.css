@@ -1,73 +1,352 @@
-/*! */
-/*!
- * Jung's Research Group Style Sheet
- *
- *
- */
-/*! */
-
-
-
-body {
-    position:relative;
-    left:10px;
-    background-color:blue;
-}
-
-
-
-/*!STYLE_SHEET_START_*/
-/*! */
-nav a {
-    color: #5a5a5a;
-    font-size: 20px;
-    font-family:'Jockey One',sans-serif;
-    font-weight: bold;
-    padding: 14px 10px;
-    text-transform: uppercase;
-}
-
-/*!JUMBOTRON*/
-/*!LINKS_TO/FORMATS_BACKGROUND_IMAGES*/
-jumbotron {
-    background-image: url('images/background/NU_LOGO.jpg'), url('images/background/VACNT.jpg');
-    background-position: bottom right, left top;
-    background-size: 11.9%, cover;
-    background-repeat: no-repeat;
-    margin-bottom: 15px;
-}
-
-
-/*!JUMBOTRON_H1*/
-jumbotron h1 {
-    color: #FFFFFF;
-    font-size: 48px;
-    font-family: 'Jockey One',sans-serif;
-    font-weight: bold;
-}
-
-/*!PTEXT*/
-p-text {
-    font-family:'Bree Serif',serif;
-    margin-right: 15px;
-    margin-left: 15px;
-}
-
-/*!col-md-2*/
-/*!
-.col-md-2 {
-    
-    margin-left: 15px;
-    
-}
-.row {
-    padding: 0 4px;
-    margin-right: 15px;
-    margin-left: 15px;
-}
+/*
+ * Template Name: Jung's Research Group Style Sheet
+ *Author: Zane Gavin
 */
 
+/*==================================================
+=            Nav Formatting                        =
+==================================================*/
+
+.navbar-fixed-top .navbar-brand>a{
+    color: #444;
+    font-size: 20px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 3px;
+    border-right: 2px solid #CC0000;
+    border-bottom: 2px solid #CC0000;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+}
+.navbar-fixed-top .navbar-nav>li{
+    padding-left:5px;
+    padding-right:5px;
+}
+.navbar-fixed-top .navbar-nav>li>a {
+    color: #444;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.navbar-fixed-top .navbar-nav>.active>a {
+    color: #444;
+}
+.navbar-fixed-top .navbar-toggle .icon-bar {
+    background-color: #444;
+}
+.navbar-fixed-top .navbar-toggle {
+    background-color: #FFFFFF;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #CC0000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #CC0000;
+}
+.navbar-fixed-top .navbar-toggle.collapsed:hover,
+.navbar-fixed-top .navbar-toggle.collapsed:focus,
+.navbar-fixed-top .navbar-toggle.collapsed:active {
+    background-color: #FFFFFF;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #CC0000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #CC0000;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+.navbar-fixed-top {
+    background: none !important; 
+    border: 0 !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    padding-top: 10px;
+}
+.navbar .nav .active > a {
+    color: #444 !important;
+    box-shadow: none !important;
+    background-color: #BCBCBC;
+    border-radius: 20px;
+    -webkit-box-shadow: none !important;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #CC0000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #CC0000;
+}
+.navbar .nav > li > a {
+  color: none !important;
+  text-shadow: none !important;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #CC0000;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #CC0000;
+}
+.navbar .nav > li > a:hover,
+.navbar .nav > li > a:focus {
+    color: #444 !important;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #CC0000;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #CC0000;
+}
+.navbar .nav .active > a:hover, 
+.navbar .nav .active > a:focus {
+    color: #444 !important;
+    box-shadow: none !important;
+    background-color: #BCBCBC;
+    border-radius: 20px;
+    -webkit-box-shadow: none !important;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #CC0000;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #CC0000;
+}
+
+.navbar-fixed-top .navbar-brand:hover,
+.navbar-fixed-top .navbar-brand:focus {
+    color: #444 !important;
+}
+.navbar-fixed-top .navbar-toggle:hover, 
+.navbar-fixed-top .navbar-toggle:focus{
+    background-color: #FFFFFF !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
 
 
-/*!STYLE_SHEET_END_*/
+/*==================================================
+=            Jumbotron Formatting                  =
+==================================================*/
+.jumbotron {
+    /*Background Images*/
+    background-image: url('images/background/VACNT.jpg');
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+    margin-top: 75px;
+}   
+/*==================================================
+=            Body Formatting                       =
+==================================================*/
+body {
+    position:relative;
+    background-color:white;
+    color: #444;
+    min-width: 300px;
+}
+html,
+body{
+    height: 100%;
+}
+/*==From Members.html==*/
+.wrapper{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.white{
+    background-color: #FFFFFF;
+}
+.shaded{
+    background-color:#BCBCBC;
+}
+.member-title{
+    padding-bottom: 10px;
+}
+.person{
+    padding-top:10px;
+    padding-bottom:5px;
+    margin-left:15px;
+    margin-right:15px;
+}
+.person + .person{
+    padding-top: 20px;
+    border-top: 3px groove #CC0000;
+}
+.img-standard{
+    max-width: 130px;
+    height: auto;
+    padding-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-max{
+    max-width: 186px;
+    height: auto;
+    padding-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*==================================================
+=            Footer Formatting                     =
+==================================================*/
+.footer .footer-content{
+    background: #BCBCBC;
+}
+.sponsor-col{
+    padding-top:5px;
+    padding-bottom:5px
+}
+.img-sponsor{
+    max-height: 80px;
+    width: auto;
+    max-width: 80px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-sponsor-big{
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sponsor-box{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.footer .bottom-bar{
+    background: #CC0000;
+    color: #FFFFFF;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.footer .bottom-bar .small{
+    color: #FFFFFF;
+}
 
+/*==================================================
+=            General Text Formatting               =
+==================================================*/
+.title-text{
+    font-family:'Jockey One',sans-serif;
+}
+.reg-text{
+    font-family:'Bree Serif',serif;
+}
+/*==================================================
+=            General Padding Classses              =
+==================================================*/
+.padding-all{
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom:15px;
+}
+.padding-bottom{
+    padding-bottom: 20px;
+}
+.padding-top{
+    padding-top: 20px;
+}
+.padding-top-bottom{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/*==================================================
+=           General Border Classes                 =
+==================================================*/
+.brdr-top{
+    border-top: 3px groove #CC0000;
+}
+.brdr-bottom{
+    border-bottom: 3px groove #CC0000;
+}
+.brdr-left{
+    border-left: 3px groove #CC0000;
+}
+.brdr-right{
+    border-right: 3px groove #CC0000;
+}
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+=For custom screen size based classes
+==================================================*/
+
+    /*========= Non-Mobile First Method  =========*/
+        @media only screen and (max-width : 300px){
+        .navbar-fixed-top .navbar-brand>a{
+            width: 0;
+            color: none;
+            font-size: 0;
+            background-color: none;
+            padding: 0;
+            border: 0;        
+
+        }
+        .jumbotron{
+            padding: 0;
+            margin-bottom: 0px;
+            margin-top: 50px;
+        }
+    }
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, 'xs' */ 
+    @media only screen and (min-width : 1px) {
+        .xs-brdr-bottom{
+            border-bottom: 3px groove #CC0000;
+        }
+        .xs-brdr-top{
+            border-top: 3px groove #CC0000;
+        }
+        .xs-padding-left-right{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+    }
+    /* Extra Small Devices, 'xs' */ 
+    @media only screen and (min-width : 480px) {
+    }
+
+    /* Small Devices, 'sm' */
+    @media only screen and (min-width : 768px) {
+        /* excluding xs */
+        .xs-brdr-bottom{
+            border: 0;
+        }
+        .xs-brdr-top{
+            border: 0;
+        }
+        .xs-padding-left-right{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        /* sm classes */
+        .sm-brdr-bottom{
+            border-bottom: 3px groove #CC0000;
+        }
+        .sm-brdr-left{
+            border-left: 3px groove #CC0000;
+        }
+        .sm-brdr-right{
+            border-right: 3px groove #CC0000;
+        }
+        .sm-brdr-top{
+            border-top: 3px groove #CC0000;
+        }
+    }
+
+    /* Medium Devices, 'md' */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, 'lrg' */
+    @media only screen and (min-width : 1200px) {
+
+    }
+
+
+/*==================================================
+=            Style Sheet End                       =
+==================================================*/
