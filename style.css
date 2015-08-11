@@ -185,6 +185,9 @@ body{
 .footer .bottom-bar .small{
     color: #FFFFFF;
 }
+.sponsors-container{
+    padding-left: 55px;
+}
 
 /*==================================================
 =            General Text Formatting               =
