@@ -7,43 +7,32 @@
 =            Nav Formatting                        =
 ==================================================*/
 
-.navbar-fixed-top .navbar-brand>a{
-    color: #444;
-    font-size: 20px;
-    background-color: #FFFFFF;
-    padding: 10px;
-    border-radius: 3px;
-    border-right: 2px solid #CC0000;
-    border-bottom: 2px solid #CC0000;
-    border-left: 2px solid #000000;
-    border-top: 2px solid #000000;
-}
-.navbar-fixed-top .navbar-nav>li{
+.top-content .navbar-fixed-top .navbar-nav>li{
     padding-left:5px;
     padding-right:5px;
 }
-.navbar-fixed-top .navbar-nav>li>a {
+.top-content .navbar-fixed-top .navbar-nav>li>a {
     color: #444;
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
 }
-.navbar-fixed-top .navbar-nav>.active>a {
+.top-content .navbar-fixed-top .navbar-nav>.active>a {
     color: #444;
 }
-.navbar-fixed-top .navbar-toggle .icon-bar {
+.top-content .navbar-fixed-top .navbar-toggle .icon-bar {
     background-color: #444;
 }
-.navbar-fixed-top .navbar-toggle {
+.top-content .navbar-fixed-top .navbar-toggle {
     background-color: #FFFFFF;
     border-top: 1px solid #000000;
     border-bottom: 1px solid #CC0000;
     border-left: 1px solid #000000;
     border-right: 1px solid #CC0000;
 }
-.navbar-fixed-top .navbar-toggle.collapsed:hover,
-.navbar-fixed-top .navbar-toggle.collapsed:focus,
-.navbar-fixed-top .navbar-toggle.collapsed:active {
+.top-content .navbar-fixed-top .navbar-toggle.collapsed:hover,
+.top-content .navbar-fixed-top .navbar-toggle.collapsed:focus,
+.top-content .navbar-fixed-top .navbar-toggle.collapsed:active {
     background-color: #FFFFFF;
     border-top: 1px solid #000000;
     border-bottom: 1px solid #CC0000;
@@ -52,14 +41,14 @@
     box-shadow: none !important;
     -webkit-box-shadow: none !important;
 }
-.navbar-fixed-top {
+.top-content .navbar-fixed-top {
     background: none !important; 
     border: 0 !important;
     box-shadow: none !important;
     -webkit-box-shadow: none !important;
     padding-top: 10px;
 }
-.navbar .nav .active > a {
+.top-content .navbar .nav .active > a {
     color: #444 !important;
     box-shadow: none !important;
     background-color: #BCBCBC;
@@ -70,26 +59,26 @@
     border-left: 1px solid #000000;
     border-right: 1px solid #CC0000;
 }
-.navbar .nav > li > a {
-  color: none !important;
-  text-shadow: none !important;
-  border-radius: 20px;
-  background-color: #FFFFFF;
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #CC0000;
-  border-left: 1px solid #000000;
-  border-right: 1px solid #CC0000;
+.top-content .navbar .nav > li > a {
+    color: none !important;
+    text-shadow: none !important;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #CC0000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #CC0000;
 }
-.navbar .nav > li > a:hover,
-.navbar .nav > li > a:focus {
+.top-content .navbar .nav > li > a:hover,
+.top-content .navbar .nav > li > a:focus {
     color: #444 !important;
     border-top: 2px solid #000000;
     border-bottom: 2px solid #CC0000;
     border-left: 2px solid #000000;
     border-right: 2px solid #CC0000;
 }
-.navbar .nav .active > a:hover, 
-.navbar .nav .active > a:focus {
+.top-content .navbar .nav .active > a:hover, 
+.top-content .navbar .nav .active > a:focus {
     color: #444 !important;
     box-shadow: none !important;
     background-color: #BCBCBC;
@@ -101,12 +90,23 @@
     border-right: 2px solid #CC0000;
 }
 
-.navbar-fixed-top .navbar-brand:hover,
-.navbar-fixed-top .navbar-brand:focus {
+.top-content .navbar-brand a{
     color: #444 !important;
+    background-color: #FFFFFF;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #CC0000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #CC0000;
+    padding: 10px;
+    border-radius: 5px;
 }
-.navbar-fixed-top .navbar-toggle:hover, 
-.navbar-fixed-top .navbar-toggle:focus{
+.top-content .navbar-brand a:hover,
+.top-content .navbar-brand a:focus {
+    color: #444 !important;
+    text-decoration: none;
+}
+.top-content .navbar-fixed-top .navbar-toggle:hover, 
+.top-content .navbar-fixed-top .navbar-toggle:focus{
     background-color: #FFFFFF !important;
     box-shadow: none !important;
     -webkit-box-shadow: none !important;
@@ -122,7 +122,7 @@
     background-position: left top;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     margin-top: 75px;
 }   
 /*==================================================
@@ -138,47 +138,12 @@ html,
 body{
     height: 100%;
 }
-/*==From Members.html==*/
 .wrapper{
     display: block;
     margin-right: auto;
     margin-left: auto;
 }
-.white{
-    background-color: #FFFFFF;
-}
-.shaded{
-    background-color:#BCBCBC;
-}
-.member-title{
-    padding-bottom: 10px;
-}
-.person{
-    padding-top:10px;
-    padding-bottom:5px;
-    margin-left:15px;
-    margin-right:15px;
-}
-.person + .person{
-    padding-top: 20px;
-    border-top: 3px groove #CC0000;
-}
-.img-standard{
-    max-width: 130px;
-    height: auto;
-    padding-bottom: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.img-max{
-    max-width: 186px;
-    height: auto;
-    padding-bottom: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 /*==================================================
 =            Footer Formatting                     =
 ==================================================*/
@@ -249,6 +214,10 @@ body{
     padding-top: 15px;
     padding-bottom: 15px;
 }
+.padding-left{
+    padding-left: 20px;
+}
+
 /*==================================================
 =           General Border Classes                 =
 ==================================================*/
@@ -271,22 +240,29 @@ body{
 ==================================================*/
 
     /*========= Non-Mobile First Method  =========*/
-        @media only screen and (max-width : 300px){
-        .navbar-fixed-top .navbar-brand>a{
-            width: 0;
-            color: none;
-            font-size: 0;
-            background-color: none;
-            padding: 0;
-            border: 0;        
 
+    /*reformats and hides menu and page top for very small screens*/
+        @media only screen and (max-width : 300px){
+            .top-content .navbar-fixed-top .navbar-brand>a{
+                width: 0;
+                color: none;
+                font-size: 0;
+                background-color: none;
+                padding: 0;
+                border: 0;
+            }
+            .jumbotron{
+                padding: 0;
+                margin-bottom: 0px;
+                margin-top: 50px;
+            }
         }
-        .jumbotron{
-            padding: 0;
-            margin-bottom: 0px;
-            margin-top: 50px;
+        @media only screen and (max-width : 767px) {
+            .top-content .navbar-fixed-top .navbar-nav>li{
+                padding-top:2px;
+                padding-bottom:2px;
+            }
         }
-    }
 
     /*==========  Mobile First Method  ==========*/
 
