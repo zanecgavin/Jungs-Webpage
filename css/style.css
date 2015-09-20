@@ -4,7 +4,7 @@
 */
 
 /*==================================================
-=            Nav Formatting                        =
+=           Top Nav Formatting                     =
 ==================================================*/
 
 .top-content .navbar-fixed-top .navbar-nav>li{
@@ -13,7 +13,7 @@
 }
 .top-content .navbar-fixed-top .navbar-nav>li>a {
     color: #444;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -25,19 +25,21 @@
 }
 .top-content .navbar-fixed-top .navbar-toggle {
     background-color: #FFFFFF;
-    border-top: 1px solid #000000;
+    border: 1px solid #000000;
+    /*border-top: 1px solid #000000;
     border-bottom: 1px solid #CC0000;
     border-left: 1px solid #000000;
-    border-right: 1px solid #CC0000;
+    border-right: 1px solid #CC0000;*/
 }
 .top-content .navbar-fixed-top .navbar-toggle.collapsed:hover,
 .top-content .navbar-fixed-top .navbar-toggle.collapsed:focus,
 .top-content .navbar-fixed-top .navbar-toggle.collapsed:active {
     background-color: #FFFFFF;
-    border-top: 1px solid #000000;
+    border: 1px solid #000000;
+    /*border-top: 1px solid #000000;
     border-bottom: 1px solid #CC0000;
     border-left: 1px solid #000000;
-    border-right: 1px solid #CC0000;
+    border-right: 1px solid #CC0000;*/
     box-shadow: none !important;
     -webkit-box-shadow: none !important;
 }
@@ -54,28 +56,31 @@
     background-color: #BCBCBC;
     border-radius: 20px;
     -webkit-box-shadow: none !important;
-    border-top: 1px solid #000000;
+    border: 1px solid #000000;
+    /*border-top: 1px solid #000000;
     border-bottom: 1px solid #CC0000;
     border-left: 1px solid #000000;
-    border-right: 1px solid #CC0000;
+    border-right: 1px solid #CC0000;*/
 }
 .top-content .navbar .nav > li > a {
     color: none !important;
     text-shadow: none !important;
     border-radius: 20px;
     background-color: #FFFFFF;
-    border-top: 1px solid #000000;
+    border: 1px solid #000000;
+    /*border-top: 1px solid #000000;
     border-bottom: 1px solid #CC0000;
     border-left: 1px solid #000000;
-    border-right: 1px solid #CC0000;
+    border-right: 1px solid #CC0000;*/
 }
 .top-content .navbar .nav > li > a:hover,
 .top-content .navbar .nav > li > a:focus {
     color: #444 !important;
-    border-top: 2px solid #000000;
+    border: 2px solid #000000;
+    /*border-top: 2px solid #000000;
     border-bottom: 2px solid #CC0000;
     border-left: 2px solid #000000;
-    border-right: 2px solid #CC0000;
+    border-right: 2px solid #CC0000;*/
 }
 .top-content .navbar .nav .active > a:hover, 
 .top-content .navbar .nav .active > a:focus {
@@ -84,26 +89,18 @@
     background-color: #BCBCBC;
     border-radius: 20px;
     -webkit-box-shadow: none !important;
-    border-top: 2px solid #000000;
-    border-bottom: 2px solid #CC0000;
+    border: 2px solid #000000;
+    /*border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
     border-left: 2px solid #000000;
-    border-right: 2px solid #CC0000;
+    border-right: 2px solid #000000;*/
 }
-
-.top-content .navbar-brand a{
-    color: #444 !important;
-    background-color: #FFFFFF;
-    border-top: 1px solid #000000;
-    border-bottom: 1px solid #CC0000;
-    border-left: 1px solid #000000;
-    border-right: 1px solid #CC0000;
-    padding: 10px;
-    border-radius: 5px;
-}
-.top-content .navbar-brand a:hover,
-.top-content .navbar-brand a:focus {
-    color: #444 !important;
-    text-decoration: none;
+.top-content .navbar-brand h3 {
+    margin: 0;
+    color: #FFFFFF;
+    background-color: none;
+    border: none;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .top-content .navbar-fixed-top .navbar-toggle:hover, 
 .top-content .navbar-fixed-top .navbar-toggle:focus{
@@ -117,31 +114,41 @@
 =            Jumbotron Formatting                  =
 ==================================================*/
 .jumbotron {
-    /*Background Images*/
-    background-image: url('images/background/VACNT.jpg');
-    background-position: left top;
+    /*Background Image*/
+    background-image: url('../images/background/VACNT.jpg');
+    background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 0px;
-    margin-top: 75px;
 }   
+
+
 /*==================================================
 =            Body Formatting                       =
 ==================================================*/
 body {
-    position:relative;
+    /*position:relative;
     background-color:white;
-    color: #444;
+    color: #444; /*default text color*/
     min-width: 300px;
 }
 html,
 body{
     height: 100%;
+    position:relative;
+    background-color:white;
+    color: #444; /*default text color*/
+    min-width: 300px;
+
 }
 .wrapper{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+    min-height: 100%;
+}
+.wrapper .about,
+.wrapper .members,
+.wrapper .research,
+.wrapper .publications{
+    width: 90%;
 }
 
 /*==================================================
@@ -149,6 +156,7 @@ body{
 ==================================================*/
 .footer .footer-content{
     background: #BCBCBC;
+    border-top: 1px solid black;
 }
 .sponsor-col{
     padding-top:5px;
@@ -175,7 +183,7 @@ body{
     padding-bottom:10px;
 }
 .footer .bottom-bar{
-    background: #CC0000;
+    background: #000000;
     color: #FFFFFF;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -193,13 +201,12 @@ body{
 =            General Text Formatting               =
 ==================================================*/
 .title-text{
-    font-family:'Jockey One',sans-serif;
+    font-weight: bolder;
 }
-.reg-text{
-    font-family:'Bree Serif',serif;
-}
+
+
 /*==================================================
-=            General Padding Classses              =
+=        General Padding/Margin Classses           =
 ==================================================*/
 .padding-all{
     padding-right: 15px;
@@ -220,62 +227,97 @@ body{
 .padding-left{
     padding-left: 20px;
 }
-
+.margin-top-bottom{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.margin-bottom{
+    margin-bottom: 10px;
+}
+.margin-left-right{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.padded-divider-10{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 /*==================================================
 =           General Border Classes                 =
 ==================================================*/
+/*move to main style sheet*/
+.horiz-border{
+    border-top: 3px solid #000000;
+}
 .brdr-top{
-    border-top: 3px groove #CC0000;
+    border-top: 3px solid #000000;
 }
 .brdr-bottom{
-    border-bottom: 3px groove #CC0000;
+    border-bottom: 3px solid #000000;
 }
 .brdr-left{
-    border-left: 3px groove #CC0000;
+    border-left: 3px solid #000000;
 }
 .brdr-right{
-    border-right: 3px groove #CC0000;
+    border-right: 3px solid #000000;
 }
 
 /*==================================================
 =            Bootstrap 3 Media Queries             =
-=For custom screen size based classes
+=      For custom screen size based classes        =
 ==================================================*/
 
     /*========= Non-Mobile First Method  =========*/
 
-    /*reformats and hides menu and page top for very small screens*/
-        @media only screen and (max-width : 300px){
-            .top-content .navbar-fixed-top .navbar-brand>a{
-                width: 0;
-                color: none;
-                font-size: 0;
-                background-color: none;
-                padding: 0;
-                border: 0;
+    /*reformats and hides menu and page top for small (sm) screens*/
+        @media only screen and (max-width : 991px){
+            .top-content .navbar-header{
+                float: none;
+                margin-right: -15px !important;
             }
-            .jumbotron{
-                padding: 0;
-                margin-bottom: 0px;
-                margin-top: 50px;
+            .top-content .navbar-toggle{
+                display: block;
             }
-        }
-        @media only screen and (max-width : 767px) {
-            .top-content .navbar-fixed-top .navbar-nav>li{
-                padding-top:2px;
-                padding-bottom:2px;
+            .top-content .navbar-collapse.collapse{
+                display: none !important;
             }
-        }
+            .top-content .navbar-nav{
+                float: none !important;
+                margin: 7.5px -15px;
+            }
+            .top-content .navbar-nav li{
+                padding-top: 2px;
+                padding-bottom: 2px;
+            }
+            .top-content .navbar-nav li a{
+                
+                margin: 0;
+                padding: 10px 15px;
 
+            }
+            .top-content .navbar-nav li{
+                float: none;
+            }
+            .top-content .navbar-collapse.collapse.in{
+                display: block !important;
+                border-top: 1px solid transparent;
+                box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+                padding: 0 15px;
+                margin: 0 -15px;
+            }
+            .top-content .collapsing{
+                overflow: hidden !important;
+            }
+        }
     /*==========  Mobile First Method  ==========*/
 
     /* Custom, 'xs' */ 
     @media only screen and (min-width : 1px) {
         .xs-brdr-bottom{
-            border-bottom: 3px groove #CC0000;
+            border-bottom: 3px solid #000000;
         }
         .xs-brdr-top{
-            border-top: 3px groove #CC0000;
+            border-top: 3px solid #000000;
         }
         .xs-padding-left-right{
             padding-left: 15px;
@@ -302,16 +344,16 @@ body{
         }
         /* sm classes */
         .sm-brdr-bottom{
-            border-bottom: 3px groove #CC0000;
+            border-bottom: 3px solid #000000;
         }
         .sm-brdr-left{
-            border-left: 3px groove #CC0000;
+            border-left: 3px solid #000000;
         }
         .sm-brdr-right{
-            border-right: 3px groove #CC0000;
+            border-right: 3px solid #000000;
         }
         .sm-brdr-top{
-            border-top: 3px groove #CC0000;
+            border-top: 3px solid #000000;
         }
     }
 

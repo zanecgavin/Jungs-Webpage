@@ -1,0 +1,144 @@
+﻿/*Style Sheet for quickly changing color schemes*/
+
+/*Text Formatting*/
+.text-color1 {
+    color: #000000;
+}
+/*Background Formatting*/
+.bround-color1 {
+    background-color: #FFFFFF;
+}
+.bround-color2{
+    background-color: #dedede;
+}
+.bround-color3{
+    background-color: #BCBCBC;
+}
+
+/*Border Formatting*/
+.b-color1 {
+    border-color: #1A4779;
+}
+/*widths*/
+.b-1px {
+    border-width: 1px;
+    border-style: solid;
+}
+.b-3px{
+    border-width: 3px;
+    border-style: solid;
+}
+/*locations*/
+.b-l{
+    border-right:none;
+    border-top:none;
+    border-bottom:none;
+}
+.b-r{
+    border-left:none;
+    border-top:none;
+    border-bottom:none;
+}
+.b-t{
+    border-right:none;
+    border-left:none;
+    border-bottom:none;
+}
+.b-b{
+    border-right:none;
+    border-left:none;
+    border-top:none;
+}
+.b-lr{
+    border-top:none;
+    border-bottom:none;
+}
+.b-tb{
+    border-right:none;
+    border-left:none;
+
+}
+/*radii*/
+.b-round-5px{
+    border-radius: 5px;
+}
+.b-round-10px{
+    border-radius: 10px;
+}
+/*End Border Formatting*/
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+=      For custom screen size based classes        =
+==================================================*/
+@media only screen and (min-width : 1px) {
+    }
+    /* Extra Small Devices, 'xs' */ 
+    @media only screen and (min-width : 480px) {
+    }
+
+    /* Small Devices, 'sm' */
+    @media only screen and (min-width : 768px) {
+        .b-sm-rem{
+            border: none;
+        }
+    }
+
+    /* Medium Devices, 'md' */
+    @media only screen and (min-width : 992px) {
+        .b-md-rem{
+            border: none;
+        }
+        .md-color2-highlightbox{
+            background-color: #dedede;
+            border-radius: 5px;
+            border-color: #1A4779;
+            border-width: 1px;
+            border-style: solid;
+        }
+    }
+
+    /* Large Devices, 'lrg' */
+    @media only screen and (min-width : 1200px) {
+        .b-lrg-rem{
+            border: none;
+        }
+    }
+/*Non-mobile method*/
+    /* Extra Small Devices, 'xs' */ 
+    @media only screen and (max-width : 479px) {
+    }
+
+    /* Small Devices, 'sm' */
+    @media only screen and (max-width : 767px) {
+    }
+
+    /* Medium Devices, 'md' */
+    @media only screen and (max-width : 991px) {
+    }
+
+    /* Large Devices, 'lrg' */
+    @media only screen and (max-width : 1199px) {
+    }
+
+
+
+/* As hex codes */
+.text-primary-0 { color: #CC0000 }	/* Main Primary color */
+.text-primary-1 { color: #FFFFFF }
+.text-primary-2 { color: #FF5454 }
+.text-primary-3 { color: #740000 }
+.text-primary-4 { color: #000000 }
+
+/* Background as hex codes*/
+.background-primary-0 { color: #CC0000 }	/* Main Primary color */
+.background-primary-1 { color: #FFFFFF }
+.background-primary-2 { color: #FF5454 }
+.background-primary-3 { color: #740000 }
+.background-primary-4 { color: #000000 }
+
+/* Background as hex codes*/
+.border-primary-0 { color: #CC0000 }	/* Main Primary color */
+.border-primary-1 { color: #FFFFFF }
+.border-primary-2 { color: #FF5454 }
+.border-primary-3 { color: #740000 }
+.border-primary-4 { color: #000000 }

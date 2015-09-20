@@ -11,39 +11,76 @@
         <!--Icon-->
         <link rel="icon" href="images/favicon/favicon.ico">
         <!--Title-->
-        <title>Members</title>
-        <!--Fonts-->
-        <link href='http://fonts.googleapis.com/css?family=Jockey+One|Bree+Serif' rel='stylesheet' type='text/css'>
+        <title>Members | Jung's Research Group</title>
         <!--Global CSS-->
-        <link type="text/css" rel="stylesheet" href="bootstrap.min.css" />
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+        <!--Scrolling nav CSS-->
+        <!--<link type="text/css" rel="stylesheet" href="scrolling-nav.css" />-->
+        <!--Colors CSS-->
+        <link type="text/css" rel="stylesheet" href="css/PageColors.css" />
         <!--Theme CSS-->
-        <link type="text/css" rel="stylesheet" href="style.css" />
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
         <!--LOCAL_STYLE_SHEET_START-->
         <style>
-            /*==From Members.html==*/
-            .white{
-                background-color: #FFFFFF;
+            /*members stuff only*/
+            /*Active Tab*/
+            #members a {
+                color: #444 !important;
+                box-shadow: none !important;
+                background-color: #BCBCBC !important;
             }
-            .shaded{
-                background-color:#BCBCBC;
+            /*Formatting*/
+            /**/
+            .member-title .title-text{
+                margin-top: 15px;
+                margin-bottom: 10px;
+                text-align: center;
             }
-            .member-title{
-                padding-bottom: 10px;
+            /*Add space below each group for the navbar to hover*/
+            .member-group-outer{
+                padding-top: 70px; /*Space for top navbar to fit right over each section*/
             }
+            /*.member-group{
+                border-radius: 5px;
+                border: 3px solid black; 
+            }*/
             .person{
                 padding-top:10px;
                 padding-bottom:5px;
-                margin-left:15px;
-                margin-right:15px;
-            }
-            .person-divider{
-                border-top: 3px groove #CC0000;
-
             }
             .person + .person{
-                padding-top: 20px;
+                /*padding-top: 20px;*/
             }
+            .person .dl-horizontal{
+                padding-top: 10px;
+            }
+            .person-about p{
+                margin: 0;   
+            }
+            .person-about{
+                /*padding: 20px;*/
+            }
+            .middle{
+                display: inline-block;
+                vertical-align: middle;
+                /*width: 100%;*/
+            }
+            /*Change default alignment for definition list*/
+            .dl-horizontal dt{
+                text-align:left;
+                /*margin-bottom: 1em;*/
+                width: auto;
+                padding-right: 2px;
+                /*padding-right:1em;*/ 
+            }
+            .dl-horizontal dd{
+                margin-left: 0;
+                /*margin-bottom: 1em;*/
+            }
+            /**/
             .img-standard{
+                max-height: 130px;
+                width: auto;
                 max-width: 130px;
                 height: auto;
                 padding-bottom: 10px;
@@ -59,28 +96,121 @@
                 margin-left: auto;
                 margin-right: auto;
             }
+            /*Floating Vertical Nav*/
+           .kill-height{
+               max-height: 0;
+           }
+            .member-nav,
+            .members  nav>ul{
+                margin-top: 35px;
+            }
+            .member-nav .navbar,
+            .member-nav nav
+            {
+                float: none !important;
+                position: fixed;
+                display: block !important;
+                overflow: visible !important;
+                max-width: 0px;
+                width: auto !important;
+                height: auto;
+                margin-left:auto;
+	            margin-right: auto;
+                margin-bottom: 30px;
+                padding-bottom: 0;
+                border: 0;
+                background: none;
+                box-shadow: none;
+                max-height: none;
+                padding-left: 0;
+                padding-right:0;
+                z-index: 1
+            }
+            .member-nav .navbar a.group-link
+            {
+                margin-top: 2px;
+                margin-bottom: 2px;
+                padding: 0px;
+                border-radius: 5px;
+                border: 1px solid #000000; 
+                font-weight: bold;
+                background-color: #FFFFFF;
+                height: auto;
+                width: 110px;
+                text-align: center;
+                color: #000000;
+            }
+            .member-nav .navbar-nav>li.active>a.group-link:focus,
+            .member-nav li a.group-link:hover,
+            .member-nav li.active a.page-scroll.group-link{
+                color: black;
+                background-color: #BCBCBC;
+                border-radius: 5px;
+                border: 1px solid black;
+            }
+            .member-nav a.sections,
+            .member-nav a.sections:hover,
+            .member-nav a.sections:focus,
+            .member-nav li a.sections,
+            .member-nav li.active a.sections,
+            .member-nav li.active a.page-scroll.sections{
+                margin-top: 2px;
+                margin-bottom: 10px;
+                padding: 0px;
+                /*border: none;
+                border-radius: 0px;
+                border-bottom: 3px solid #000000;*/
+                font-weight: bold;
+                background: none !important;
+                height: auto;
+                width: 70px;
+                text-align: center;
+                color: #000000;                             
+            }
+            /*Screen Width Specific Formatting*/
            @media (min-width: 768px){
                .professor .md-shaded{
-                background: #BCBCBC;
+                background: #dedede;
+                border-radius: 5px;
+                border: 3px solid #000000; 
+                }
+               .professor .bordered-section{
+                    border-radius: 5px;
+                    border-bottom: 3px solid #000000;  
+               }
             }
+            /*Hide Visibility and change formatting when scroll bar isn't useful*/
+            @media (max-height: 400px){
+                .member-nav .navbar,
+                .member-nav nav {
+                    position: absolute;
+                }
+            }
+            @media (max-width: 767px){
+                .member-nav .navbar,
+                .member-nav nav{
+                    visibility: hidden !important;
+                }
+                .member-group{
+                    padding-top: 0;
+                }
         }
-        </style>
+        </style>        
         <!--LOCAL_STYLE_SHEET_END-->
     </head><!--//head-->
     <!---->
-    <!---->
-<body id="page-top">
+<body id="page-top" data-spy="scroll" data-target=".member-nav">
     <!---->
     <!--wrapper-->
     <div class="wrapper">
         <!--top-content-->
-        <div class="top-content container">
+        <div class="top-content">
             <!---->
             <nav class="navbar navbar-fixed-top">
                 <div class="container">
                     <div class="navbar-header">
                         <div class="navbar-brand title-text">
-                            <a href="#page-top" class="page-scroll">Jung's Research Group</a>
+                            <h3 class="title-text">Jung's Research Group</h3>
                         </div>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                             <span class="sr-only">Toggle navigation</span>
@@ -89,15 +219,16 @@
                             <span class="icon-bar"></span>
                         </button>
                     </div>
-                    <div id="navbar" class="navbar-collapse collapse navbar-right">
+                    <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav title-text">
-                            <li><a href="index.html">About Us</a></li>
-                            <li><a href="Research.html">Research</a></li>
-                            <li class="active"><a href="Members.html">Members</a></li>
-                            <li><a href="Publications.html">Publications</a></li>
+                            <li id="home"><a href="index.html">Home</a></li>
+                            <li id="aboutus"><a href="AboutUs.html">About Us</a></li>
+                            <li id="research"><a href="Research.html">Research</a></li>
+                            <li id="members"><a href="Members.html">Members</a></li>
+                            <li id="publications"><a href="Publications.html">Publications</a></li>
                         </ul>
                     </div><!--//navbar-collapse-->
-                </div><!--//container-->
+                </div>
             </nav><!--//nav-->
             <!---->
             <!---->
@@ -105,580 +236,604 @@
             <div class="jumbotron">
             </div><!--//jumbotron-->
             <!---->
+            <!---->
+            <!--up-arrow-->
+            <div class="up-arrow">
+                <div class="navbar navbar-fixed-bottom">
+                    <div class="container">
+                        <div class="navbar-right">
+                            <div class="nav navbar-nav">
+                                <a href="#page-top"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA+UlEQVR42u3XsQ4BQRSFYauj8AAKShIFDXoiUYuGxtPRIRGFxgNQ0QglhQdQKGicSUhksjNz75pZ2WQm+Qtr4nwVEaT+fIIkA9JohB5oHDcgg2ao+349RQP0jAMgxpeoJT1foD4XwQWoxiMjOADTeCQEFUAdZyMoAO44C2ECRB0nI3SAX8dJCBXA1rgREQawPa5FyABX40rEN0B8t69Qx9H458xRLwxQQVuUdQy4ozo6yADdqaIdc6iG9qZLHuABHuABiQEU0JkJKKKLLYA4G9Qg3hW/KU3KRQ6gjNYob7h3RW10tA0QJ4eGqKR4/4Qm6Eb9wET/ObVyXpHRRiG/w7TkAAAAAElFTkSuQmCC" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---->
         </div><!--//top-content-->
         <!---->
-        <!--member-container-->
-        <div class="member-container">
-
-            <!--professor-->
-            <section class="professor white" id="professor">
-                <div class="container">
-                    <div class="row member-title title-text">
-                        <div class="col-xs-12">
-                            <h3>Professor</h3>
-                        </div><!--//col-12-->
-                    </div><!--//member-title-->
-                </div><!--//container-->
-                <div class="person">
-                    <div class="container">
-                        <div class="reg-text">
-                            <div class="col-xs-12 xs-brdr-bottom col-sm-6 padding-top-bottom">
-                                <img src="images/people/Professor.jpg" class="img-max">
-                            </div><!--//col-12-6-->
-                            <div class="col-xs-12 xs-brdr-bottom col-sm-6 padding-top-bottom md-shaded">
-                                <h4>Yung Joon Jung, Ph. D.</h4>
-                                <dl class="dl-horizontal">
-                                    <dt></dt>
-                                    <dd><br /></dd>
-                                    <dt>Associate Professor</dt>
-                                    <dd>Department of Mechanical and Industrial Engineering,</dd>
-                                    <dd>Northeastern University</dd>
-                                    <dt>Phone:</dt>
-                                    <dd>(617) 373-4843</dd>
-                                    <dt>E-mail:</dt>
-                                    <dd><a href="mailto:jungy@coe.neu.edu?">jungy@coe.neu.edu</a></dd>
-                                    <dd><br /></dd>
-                                    <dd><br /></dd>
-                                    <dt><a href="Jung_CV_2014_Web.pdf" target="_blank">Detailed CV</a></dt>
-                                    <dd><br /></dd>
-                                </dl>
-                            </div><!--//col-6-->
-                        </div><!--//row-->
-                    </div><!--//container-->
-                    <div class="container">
-                        <div class="row reg-text">
-                            <div class="col-xs-12 xs-brdr-bottom col-sm-6 padding-top-bottom md-shaded">
-                                <h4>Education</h4>
-                                <dl class="dl-horizontal">
-
-                                    <dt>Postdoctoral Fellow</dt>
-                                    <dd>Rensselaer Polytechnic Institute, Troy, USA</dd>
-                                    <dt>Ph. D.</dt>
-                                    <dd>Materials Science and Engineering</dd>
-                                    <dd><abbr title="Rensselaer Polytechnic Institute">RPI</abbr>, Troy, USA</dd>
-                                    <dt>B. S.</dt>
-                                    <dd>Metallurgical Engineering</dd>
-                                    <dd>Inha University, Republic of Korea</dd>
-
-                                </dl>
-                            </div><!--//col-6-->
-                            <div class="col-xs-12 col-sm-6 padding-top-bottom">
-                                <h4>Biographical Information</h4>
-                                <p">Prof. Jung received his Ph.D. in Materials Science and Engineering from Rensselaer Polytechnic Institute at 2003 under the guidance of Prof. Pulickel M. Ajayan. At 2002, he worked as a visiting researcher at NTT Basic Research Laboratories (Device Physics) in  Japan. From 2003 to 2005 he worked as a Postdoctoral Fellow at Rensselaer, and joined Northeastern University as an Assistant Professor in Sept. 2005, working in the Department of Mechanical and Industrial Engineering and CHN Nanomanufacturing Center (NSF-NSEC).</p>
-                            </div><!--//col-6-->
-                        </div><!--//row-->
-                    </div><!--//container-->
-                </div>
-            </section><!--//professor-->
+        <!--member-->
+        <div class="members container-fluid padding-top-bottom">
             <!---->
-            <!--Visiting-prof-->
-            <section class="Visiting-prof shaded" id="Visiting-prof">
-                <div class="container padding-top-bottom">
-                    <div class="row">
-                        <div class="container">
-                            <div class="row member-title title-text">
-                                <div class="col-xs-12">
-                                    <h3>Visiting Professor</h3>
-                                </div><!--//col-12-->
-                            </div><!--//member-title-->
-                        </div><!--//container-->
-                        <div class="container">
-                            <div class="reg-text">
-                                <div class="person container">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-3">
-                                            <img src="images/people/SKyoung.jpg" class="img-standard">
-                                            <p class="text-center"><b>Sun Kyoung Jeoung</b></p>
-                                        </div><!--//col-2-->
-                                        <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
-                                            <dl class="dl-horizontal">
+            <!--member-nav-->
+            <div class="col-sm-2 kill-height">
+                <div class="member-nav">
+                    <div class="container-fluid">
+                        <nav class="navbar navbar-default" role="navigation">
+                            <ul class="nav navbar-nav">
+                                <li class="">
+                                    <a class="page-scroll sections b-b b-3px b-color1" href="#page-top">Sections</a>
+                                </li>
+                                <li class="">
+                                    <a class="page-scroll group-link" href="#professor">Prof.</a>
+                                </li>
+                                <li class="">
+                                    <a class="page-scroll group-link" href="#visiting-schol">Visiting Schol.</a>
+                                </li>
+                                <li class="">
+                                    <a class="page-scroll group-link" href="#grads">Grad.</a>
+                                </li>
+                                <li class="">
+                                    <a class="page-scroll group-link" href="#ug">Undergrad.</a>
+                                </li>
+                                <li class="">
+                                    <a class="page-scroll group-link" href="#alumni">Alumni</a>
+                                </li>
+                            </ul><!--//ul-->
+                        </nav><!--navbar-->
+                    </div><!--//container-->
+                </div><!--//member-nav-->
 
-                                                <dt>Research interests:</dt>
-                                                <dd>Development of smart and lightweight materials for next-generation high performance automobiles</dd>
+            </div><!--//col-->
+            <!--content-->
+            <div class="col-xs-offset-0 col-xs-12 col-sm-offset-2 col-sm-10">
+                <div class="container-fluid">
+                    <!--professor-->
+                    <section class="row professor member-group-outer" id="professor">
+                        <div class="container-fluid member-group b-3px b-color1 b-round-10px">
+                            <!--group-title-->
+                            <div class="row member-title">
+                                <h3 class=" title-text">Professor</h3>
+                            </div><!--//member-title-->
+                            <!--prof-jung-->
+                            <div class="row person">
+                                <div class="reg-text">
+                                    <!--<div class="col-xs-12  col-sm-6 container padding-top-bottom xs-brdr-bottom">-->
+                                    <div class="col-xs-12  col-sm-6 container padding-top-bottom b-b b-1px b-color1 b-sm-rem">
+                                        <img src="images/people/Professor.jpg" class="img-max">
+                                    </div><!--//col-6-->
+                                    <!--<div class="col-xs-12 col-sm-6 container xs-brdr-bottom md-shaded padding-top-bottom">-->
+                                    <div class="col-xs-12 col-sm-6 container padding-top-bottom b-b b-1px b-color1 b-sm-rem  md-color2-highlightbox">
+                                        <div class="">
+                                            <h4 class="title-text">Yung Joon Jung, Ph. D.</h4>
+                                            <p><br /></p>
+                                            <p><b>Associate Professor</b>, Department of Mechanical and Industrial Engineering, Northeastern University</p>
+
+                                            <dl class="dl-horizontal">
+                                                <dt>Phone:</dt>
+                                                <dd>(617) 373-4843</dd>
+                                                <dt>E-mail:</dt>
+                                                <dd><a href="mailto:jungy@coe.neu.edu?">jungy@coe.neu.edu</a></dd>
                                                 <dd><br /></dd>
-                                                <dt>Vice President</dt>
-                                                <dd>Automotive Materials Convergence & System, R&D Division</dd>
-                                                <dd>Korea Automotive Technology Insitute, Korea</dd>
-                                                
+                                                <dd><br /></dd>
+                                                <dt><a href="Jung_CV_2014_Web.pdf" target="_blank">Detailed CV</a></dt>
+                                                <dd><br /></dd>
                                             </dl>
-                                        </div><!--//col-10-->
-                                    </div><!--//row-->
-                                </div><!--//person-container-->
-                            </div><!--//reg-text-->
-                        </div><!--//container-->
-                    </div><!--//row-->
-                </div><!--//container-->
-            </section><!--//Visiting-prof-->
-            <!---->
-            <!--Grads-->
-            <section class="graduate-students white" id="grads">
-                <div class="container padding-top-bottom">
-                    <div class="row">
-
-                        <div class="container">
-                            <div class="row member-title title-text">
-                                <div class="col-xs-12">
-                                    <h3>Graduate Students</h3>
-                                </div><!--//col-12-->
+                                        </div>
+                                    </div><!--//col-6-->
+                                    <!--<div class="col-xs-12 xs-brdr-bottom col-sm-6 padding-top-bottom md-shaded">-->
+                                    <div class="col-xs-12 col-sm-6 padding-top-bottom b-b b-1px b-color1 b-sm-rem md-color2-highlightbox">
+                                        <div class="person-about">
+                                            <h4 class="title-text">Education</h4>
+                                            <p><b>Postdoctoral Fellow</b>, Rensselaer Polytechnic Institute, Troy, USA</p>
+                                            <p><b>Ph. D.</b>, Materials Science and Engineering, <abbr title="Rensselaer Polytechnic Institute">RPI</abbr>, Troy, USA</p>
+                                            <p><b>B. S.</b>, Metallurgical Engineering, Inha University, Republic of Korea</p>
+                                        </div>
+                                    </div><!--//col-6-->
+                                    <div class="col-xs-12 col-sm-6 padding-top-bottom">
+                                        <div class="">
+                                            <h4 class="title-text">Biographical Information</h4>
+                                            <p>Prof. Jung received his Ph.D. in Materials Science and Engineering from Rensselaer Polytechnic Institute at 2003 under the guidance of Prof. Pulickel M. Ajayan. At 2002, he worked as a visiting researcher at NTT Basic Research Laboratories (Device Physics) in  Japan. From 2003 to 2005 he worked as a Postdoctoral Fellow at Rensselaer, and joined Northeastern University as an Assistant Professor in Sept. 2005, working in the Department of Mechanical and Industrial Engineering and CHN Nanomanufacturing Center (NSF-NSEC).</p>
+                                        </div>
+                                    </div><!--//col-6-->
+                                </div>
+                            </div>
+                        </div>
+                    </section><!--//professor-->
+                    <!---->
+                    <!--Visiting-schol-->
+                    <section class="row visiting-prof member-group-outer" id="visiting-schol">
+                        <div class="container-fluid member-group b-3px b-color1 b-round-10px">
+                            <!--group-title-->
+                            <div class="row member-title">
+                                <h3 class=" title-text">Visiting Scholars</h3>
                             </div><!--//member-title-->
-                        </div><!--//container-->
-                        <div class="container">
-                            <div class="reg-text">
-
-                                <div class="person container">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-3">
-                                            <img src="images/people/Sanghyun.jpg" class="img-standard">
-                                            <p class="text-center"><b>Sanghyun Hong</b></p>
-                                        </div><!--//col-2-->
-                                        <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
+                            <div class="row b-t b-1px b-color1"></div><!--divider-->
+                            <!--SunKyoungJeoung-->
+                            <div class="row person">
+                                <div class="reg-text">
+                                    <div class="col-xs-12 col-sm-3">
+                                        <img src="images/people/SKyoung.jpg" class="img-standard">
+                                        <p class="text-center"><b>Sun Kyoung Jeoung</b></p>
+                                    </div><!--//col-2-->
+                                    <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
+                                        <div class="person-about">
                                             <dl class="dl-horizontal">
-
-                                                <dt>Research interests:</dt>
+                                                <dt>Research Interests:</dt>
+                                                <dd>Development of smart and lightweight materials for next-generation high performance automobiles</dd>
+                                                <dt>Position:</dt>
+                                                <dd>Vice President, Automotive Materials Convergence & System, R&D Division. Korea Automotive Technology Insitute, Korea</dd>
+                                            </dl>
+                                        </div>
+                                    </div><!--//col-10-->
+                                </div><!--//row-->
+                            </div><!--//person-container-->
+                            <div class="row b-t b-1px b-color1"></div><!--divider-->
+                            <!--RodrigoLavall-->
+                            <div class="row person">
+                                <div class="reg-text">
+                                    <div class="col-xs-12 col-sm-3">
+                                        <img src="images/people/RodrigoL.jpg" class="img-standard">
+                                        <p class="text-center"><b>Rodrigo Lassarote Lavall</b></p>
+                                    </div><!--//col-2-->
+                                    <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
+                                        <div class="person-about">
+                                            <dl class="dl-horizontal">
+                                                <dt>Research Interests:</dt>
+                                                <dd>Synthesis and characterization of materials based on different polymeric matrices (natural and synthetic origin) and nanostructured carbon materials (carbon nanotube, graphene and carbon black) and its application in devices such as supercapacitors and lithium-ion batteries, and high performance polymeric parts.</dd>
+                                                <dt>Position:</dt>
+                                                <dd>Associate Professor of Physical-Chemistry at the Chemistry Department of Federal University of Minas Gerais (UFMG)/Brazil</dd>
+                                            </dl>
+                                        </div>
+                                    </div><!--//col-10-->
+                                </div><!--//row-->
+                            </div><!--//person-container-->
+                        </div><!--//container-->
+                    </section><!--//Visiting-schol-->
+                    <!---->
+                    <!--Grads-->
+                    <section class="row graduate-students member-group-outer" id="grads">
+                        <div class="container-fluid member-group b-3px b-color1 b-round-10px">
+                            <!--group-title-->
+                            <div class="row member-title">
+                                <h3 class=" title-text">Graduate Students</h3>
+                            </div><!--//member-title-->
+                            <div class="row b-t b-1px b-color1"></div><!--divider-->
+                            <!--SanghyunHong-->
+                            <div class="row person">
+                                <div class="reg-text">
+                                    <div class="col-xs-12 col-sm-3">
+                                        <img src="images/people/Sanghyun.jpg" class="img-standard">
+                                        <p class="text-center"><b>Sanghyun Hong</b></p>
+                                    </div><!--//col-2-->
+                                    <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
+                                        <div class="person-about">
+                                            <dl class="dl-horizontal">
+                                                <dt>Research Interests:</dt>
                                                 <dd>Fabrication of 1D nanostructures and their applications</dd>
                                                 <dt>Email:</dt>
                                                 <dd><a href="mailto:hong.san@husky.neu.edu?">hong.san@husky.neu.edu</a></dd>
-                                                <dd><br /></dd>
-                                                <dt>Ph. D. Candidate</dt>
-                                                <dd>Department of Mechanical and Industrial Engineering,</dd>
-                                                <dd>Northeastern University, Boston, MA</dd>
-                                                <dt>M. S.</dt>
-                                                <dd>Chemical Engineering,</dd>
-                                                <dd>Inha University, Republic of Korea (2009)</dd>
-                                                <dt>B. S.</dt>
-                                                <dd>Chemical Engineering,</dd>
-                                                <dd>Inha University, Republic of Korea (2007)</dd>
-
                                             </dl>
-                                        </div><!--//col-10-->
-                                    </div><!--//row-->
-                                </div><!--//person-container-->
-                                
-                                <div class="person-divider"></div>
-
-                                <div class="person container">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-3">
-                                            <img src="images/people/JiHao.jpg" class="img-standard">
-                                            <p class="text-center"><b>Ji Hao</b></p>
-                                        </div><!--//col-2-->
-                                        <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
+                                            <p><b>Ph. D. Candidate</b>, Department of Mechanical and Industrial Engineering, Northeastern University, Boston, MA</p>
+                                            <p><b>M. S.</b>, Chemical Engineering, Inha University, Republic of Korea (2009)</p>
+                                            <p><b>B. S.</b>, Chemical Engineering, Inha University, Republic of Korea (2007)</p>
+                                        </div>
+                                    </div><!--//col-10-->
+                                </div>
+                            </div><!--//person-container-->
+                            <div class="row b-t b-1px b-color1"></div><!--divider-->
+                            <!--JiHao-->
+                            <div class="row person">
+                                <div class="reg-text">
+                                    <div class="col-xs-12 col-sm-3">
+                                        <img src="images/people/JiHao.jpg" class="img-standard">
+                                        <p class="text-center"><b>Ji Hao</b></p>
+                                    </div><!--//col-2-->
+                                    <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
+                                        <div class="person-about">
                                             <dl class="dl-horizontal">
-
-                                                <dt>E-mail</dt>
+                                                <dt>Research Interests:</dt>
+                                                <dd></dd>
+                                                <dt>E-mail:</dt>
                                                 <dd><a href="mailto:hao.j@husky.neu.edu?">hao.j@husky.neu.edu</a></dd>
-                                                <dd><br /></dd>
-                                                <dt>Ph. D. Student</dt>
-                                                <dd>Department of Mechanical and Industrial Engineering,</dd>
-                                                <dd>Northeastern University</dd>
-                                                <dt>M. E.</dt>
-                                                <dd>Optoelectonic Engineering,</dd>
-                                                <dd>Huazhong University of Science and Technology, China (2011)</dd>
-                                                <dt>B. S.</dt>
-                                                <dd>Opto-information Science and Technology,</dd>
-                                                <dd>Harbin University of Science and Technology, China (2008)</dd>
-
                                             </dl>
-                                        </div><!--//col-10-->
-                                    </div><!--//row-->
-                                </div><!--//person-container-->
+                                            <p><b>Ph. D. Student</b>, Department of Mechanical and Industrial Engineering, Northeastern University</p>
+                                            <p><b>M. E.</b>, Optoelectonic Engineering, Huazhong University of Science and Technology, China (2011)</p>
+                                            <p><b>B. S.</b>, Opto-information Science and Technology, Harbin Institute of Technology, China (2008)</p>
+                                        </div>
+                                    </div><!--//col-10-->
+                                </div><!--//row-->
+                            </div><!--//person-container-->
+                            <div class="row b-t b-1px b-color1"></div><!--divider-->
+                            <!--Hyehee Kim-->
+                            <div class="row person">
+                                <div class="reg-text">
+                                    <div class="col-xs-12 col-sm-3">
+                                        <img src="images/people/HyeheeK.jpg" class="img-standard">
+                                        <p class="text-center"><b>Hyehee Kim</b></p>
+                                    </div><!--//col-2-->
+                                    <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
+                                        <div class="person-about">
 
-                                <div class="person-divider"></div>
-
-                                <div class="person container">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-3">
-                                            <img src="images/people/HyeheeK.jpg" class="img-standard">
-                                            <p class="text-center"><b>Hyehee Kim</b></p>
-                                        </div><!--//col-2-->
-                                        <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
                                             <dl class="dl-horizontal">
-
+                                                <dt>Research Interests:</dt>
+                                                <dd></dd>
                                                 <dt>E-mail:</dt>
                                                 <dd><a href="mailto:kim.hye@husky.neu.edu?">kim.hye@husky.neu.edu</a></dd>
-                                                <dd><br /></dd>
-                                                <dt>Ph.D Student</dt>
-                                                <dd>Department of Mechanical and Industrial Engineering,</dd>
-                                                <dd>Northeastern University</dd>
-                                                <dt>B.S.</dt>
-                                                <dd>Bio Industrial and Mechanical Engineering Department,</dd>
-                                                <dd>Kyung Pook National University, Republic of Korea (2013)</dd>
-
                                             </dl>
-                                        </div><!--//col-10-->
-                                    </div><!--//row-->
-                                </div><!--//person-container-->
-
-                            </div><!--//reg-text-->
-                        </div><!--//container-->
-                    </div><!--//row-->
-                </div><!--//container-->
-            </section><!--//graduate-->
-            <!---->
-            <!--Undergrads-->
-            <section class="undergrad-students shaded" id="ug">
-                <div class="container padding-top-bottom">
-                    <div class="row">
-                        <div class="container">
-                            <div class="row member-title title-text">
-                                <div class="col-xs-12">
-                                    <h3>Undergraduate Students</h3>
-                                </div><!--//col-12-->
-                            </div><!--//member-title-->
-                        </div><!--//container-->
-                        <div class="container">
-                            <div class="reg-text">
-
-                                <div class="person container">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-3">
-                                            <img src="images/people/Juan.jpg" class="img-standard">
-                                            <p class="text-center"><b>Juan Delhoyo</b></p>
-                                        </div><!--//col-2-->
-                                        <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
-
+                                            <p><b>Ph.D Student</b>, Department of Mechanical and Industrial Engineering, Northeastern University</p>
+                                            <p><b>B.S.</b>, Bio Industrial and Mechanical Engineering Department, Kyung Pook National University, Republic of Korea (2013)</p>
+                                        </div>
+                                    </div><!--//col-10-->
+                                </div><!--//row-->
+                            </div><!--//person-container-->
+                            <div class="row b-t b-1px b-color1"></div><!--divider-->
+                            <!--JungHoon-->
+                            <div class="row person">
+                                <div class="reg-text">
+                                    <div class="col-xs-12 col-sm-3">
+                                        <img src="images/people/JungHoon.jpg" class="img-standard">
+                                        <p class="text-center"><b>Jung Hoon Nam</b></p>
+                                    </div><!--//col-2-->
+                                    <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
+                                        <div class="person-about">
                                             <dl class="dl-horizontal">
+                                                <dt>Research Interests:</dt>
+                                                <dd></dd>
                                                 <dt>E-mail:</dt>
-                                                <dd><a href="mailto:delhoyo.j@husky.neu.edu?">delhoyo.j@husky.neu.edu</a></dd>
-                                                <dd><br /></dd>
-                                                <dt>Student</dt>
-                                                <dd>Department of Mechanical and Industrial Engineering, </dd>
-                                                <dd>Northeastern University</dd>
+                                                <dd><a href="mailto:kim.hye@husky.neu.edu?">kim.hye@husky.neu.edu</a></dd>
                                             </dl>
-
-                                        </div><!--//col-10-->
-                                    </div><!--//row-->
-                                </div><!--//person-container-->
-
-                                <div class="person-divider"></div>
-
-                                <div class="person container">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-3">
-                                            <img src="images/people/Zane.jpg" class="img-standard">
-                                            <p class="text-center"><b>Zane Gavin</b></p>
-                                        </div><!--//col-2-->
-                                        <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
-
+                                            <p><b>Ph.D Student</b>, Department of Mechanical and Industrial Engineering, Northeastern University</p>
+                                            <p><b>M.E.</b>, Chemical and Biological Engineering Department, Inha University, Republic of Korea (2013)</p>
+                                            <p><b>B.S.</b>, Chemistry and Chemical Engineering Department, Inha University, Republic of Korea (2013)</p>
+                                        </div>
+                                    </div><!--//col-10-->
+                                </div><!--//row-->
+                            </div><!--//person-container-->
+                            <div class="row b-t b-1px b-color1"></div><!--divider-->
+                            <!--Sen Gao-->
+                            <div class="row person">
+                                <div class="reg-text">
+                                    <div class="col-xs-12 col-sm-3">
+                                        <img src="images/people/asdad.jpg" class="img-standard">
+                                        <p class="text-center"><b>Sen Gao</b></p>
+                                    </div><!--//col-2-->
+                                    <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
+                                        <div class="person-about">
                                             <dl class="dl-horizontal">
+                                                <dt>Research Interests:</dt>
+                                                <dd></dd>
+                                                <dt>E-mail:</dt>
+                                                <dd><a href="mailto:gao.se@husky.neu.edu?">gao.se@husky.neu.edu</a></dd>
+                                            </dl>
+                                            <p><b>Ph.D Student</b>, Department of Mechanical and Industrial Engineering, Northeastern University</p>
+                                            <p><b>M.E.</b>, Applied Chemistry, Beihang University, China (2015)</p>
+                                            <p><b>B.E.</b>,Inorganic Nonmetallic Materials Engineering, University of Science and Technology Beijing, China (2012)</p>
+                                        </div>
+                                    </div><!--//col-10-->
+                                </div><!--//row-->
+                            </div><!--//person-container-->
+
+                        </div><!--//container-->
+                    </section><!--//graduate-->
+                    <!---->
+                    <!--Undergrads-->
+                    <section class="row undergrad-students member-group-outer" id="ug">
+                        <div class="container-fluid member-group b-3px b-color1 b-round-10px">
+                            <!--group-title-->
+                            <div class="row member-title">
+                                <h3 class=" title-text">Undergraduate Students</h3>
+                            </div><!--//member-title-->
+                            <div class="row b-t b-1px b-color1"></div><!--divider-->
+                            <!--Zane Gavin-->
+                            <div class="row person">
+                                <div class="reg-text">
+                                    <div class="col-xs-12 col-sm-3">
+                                        <img src="images/people/Zane.jpg" class="img-standard">
+                                        <p class="text-center"><b>Zane Gavin</b></p>
+                                    </div><!--//col-2-->
+                                    <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
+                                        <div class="person-about">
+                                            <dl class="dl-horizontal">
+                                                <dt>Research Interests:</dt>
+                                                <dd></dd>
                                                 <dt>E-mail:</dt>
                                                 <dd><a href="mailto:gavin.z@husky.neu.edu?">gavin.z@husky.neu.edu</a></dd>
-                                                <dd><br /></dd>
-                                                <dt>Student</dt>
-                                                <dd>Department of Mechanical and Industrial Engineering,</dd>
-                                                <dd>Northeastern University</dd>
                                             </dl>
-
-                                        </div><!--//col-10-->
-                                    </div><!--//row-->
-                                </div><!--//person-container-->
-
-                            </div><!--//reg-text-->
+                                            <p>Department of Mechanical and Industrial Engineering, Northeastern University</p>
+                                        </div>
+                                    </div><!--//col-10-->
+                                </div><!--//row-->
+                            </div><!--//person-container-->
+                            <div class="row b-t b-1px b-color1"></div><!--divider-->
+                            <!--Alex Keklak-->
+                            <div class="row person">
+                                <div class="reg-text">
+                                    <div class="col-xs-12 col-sm-3">
+                                        <img src="images/people/AlexK.jpg" class="img-standard">
+                                        <p class="text-center"><b>Alex Keklak</b></p>
+                                    </div><!--//col-2-->
+                                    <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
+                                        <div class="person-about">
+                                            <dl class="dl-horizontal">
+                                                <dt>Research Interests:</dt>
+                                                <dd> Graphene CVD, Graphene-aided thermal dispersion, Materials testing solutions for CNTs</dd>
+                                                <dt>E-mail:</dt>
+                                                <dd><a href="mailto:keklak.a@husky.neu.edu?">keklak.a@husky.neu.edu</a></dd>
+                                            </dl>
+                                            <p>Department of Mechanical and Industrial Engineering, Northeastern University</p>
+                                        </div>
+                                    </div><!--//col-10-->
+                                </div><!--//row-->
+                            </div><!--//person-container-->
                         </div><!--//container-->
-                    </div><!--//row-->
-                </div><!--//container-->
-            </section><!--//undergrad-->
-            <!---->
-            <!--Alumni-->
-            <section class="alumni white" id="alumni">
-                <div class="container padding-top-bottom">
-                    <div class="row">
-                        <div class="container">
-                            <div class="row member-title title-text">
-                                <div class="col-xs-12">
-                                    <h3>Alumni</h3>
-                                </div><!--//col-12-->
+                    </section><!--//undergrad-->
+                    <!---->
+                    <!--Alumni-->
+                    <section class="row alumni member-group-outer" id="alumni">
+                        <div class="container-fluid member-group b-3px b-color1 b-round-10px">
+                            <!--group-title-->
+                            <div class="row member-title">
+                                <h3 class=" title-text">Alumni</h3>
                             </div><!--//member-title-->
-                        </div><!--//container-->
-                        <div class="container">
-                            <div class="reg-text">
-                                <!--HyunyoungJung-->
-                                <div class="person container">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-3">
-                                            <img src="images/people/HYJ.jpg" class="img-standard">
+                            <div class="row b-t b-1px b-color1"></div><!--divider-->
+                            <!--HyunyoungJung-->
+                            <div class="row person">
+                                <div class="reg-text">
+                                    <div class="col-xs-12">
+                                        <div class="person-about">
                                             <p class="text-center"><b>Hyunyoung Jung</b></p>
-                                        </div><!--//col-2-->
-                                        <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
                                             <dl class="dl-horizontal">
-
-                                                <dt>Research interests:</dt>
-                                                <dd>Energy and environment materials</dd>
-                                                <dt> E-mail:</dt>
-                                                <dd><a href="mailto:hjung@coe.neu.edu?">hjung@coe.neu.edu</a></dd>
-                                                <dd><br /></dd>
-                                                <dt>Postdoctoral Fellow</dt>
-                                                <dd>Department of Mechanical and Industrial Engineering,</dd>
-                                                <dd>Northeastern University, Boston, MA</dd>
-                                                <dt>Postdoctoral Fellow</dt>
-                                                <dd>Department of Materials Science and Engineering,</dd>
-                                                <dd>Carnegie Mellon University (2009)</dd>
-                                                <dt>Ph. D. </dt>
-                                                <dd>Department of Chemistry, Seoul National University,</dd>
-                                                <dd>Republic of Korea (2008)</dd>
-
+                                                <dt>Current Position:</dt>
+                                                <dd>Associate Professor, Department of BLANK, BLANK University</dd>
                                             </dl>
-                                        </div><!--//col-10-->
-                                    </div><!--//row-->
-                                </div><!--//person-container-->
-                                <div class="person-divider"></div>
-                                <!--FabrizioMartini-->
-                                <div class="person container">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-3">
-                                            <img src="images/people/FabrizioMartini.jpg" class="img-standard">
+                                            <p><b>Ph. D.</b>, Department of Chemistry, Seoul National University, Republic of Korea (2008)</p>
+                                        </div>
+                                    </div><!--//col-10-->
+                                </div><!--//row-->
+                            </div><!--//person-container-->
+                            <div class="row b-t b-1px b-color1"></div><!--divider-->
+                            <!--Juan Delhoyo-->
+                            <div class="row person">
+                                <div class="reg-text">
+                                    <div class="col-xs-12">
+                                        <div class="person-about">
+                                            <p class="text-center"><b>Juan Delhoyo</b></p>
+                                            <p>Department of Mechanical and Industrial Engineering, Northeastern University</p>
+                                        </div>
+                                    </div><!--//col-10-->
+                                </div><!--//row-->
+                            </div><!--//person-container-->
+                            <div class="row b-t b-1px b-color1"></div><!--divider-->
+                            <!--Kazuki Yamada-->
+                            <div class="row person">
+                                <div class="reg-text">
+                                    <div class="col-xs-12">
+                                        <div class="person-about">
+                                            <p class="text-center"><b>Kazuki Yamada</b></p>
+                                            <dl class="dl-horizontal">
+                                                <dt>Current Position:</dt>
+                                                <dd>Tokyo Electric Power Company</dd>
+                                            </dl>
+                                            <p><b>Ph.D.</b>, Department of Physics, Tokyo University of Science, Japan (2013)</p>
+                                        </div>
+                                    </div><!--//col-10-->
+                                </div><!--//row-->
+                            </div><!--//person-container-->
+                            <div class="row b-t b-1px b-color1"></div><!--divider-->
+                            <!--FabrizioMartini-->
+                            <div class="row person">
+                                <div class="reg-text">
+                                    <div class="col-xs-12">
+                                        <div class="person-about">
                                             <p class="text-center"><b>Fabrizio Martini</b></p>
-                                        </div><!--//col-2-->
-                                        <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
-
                                             <dl class="dl-horizontal">
-                                                <dt>Senior Engineer</dt>
-                                                <dd>Boston Based Start-Up Company</dd>
-                                                <dd>Boston, MA</dd>
-                                                <dt>M. S.</dt>
-                                                <dd>Department of Mechanical and Industrial Engineering,</dd>
-                                                <dd>Northeastern University (2012)</dd>
+                                                <dt>Current Position:</dt>
+                                                <dd>Senior Engineer, Boston Based Start-Up Company. Boston, MA</dd>
                                             </dl>
-
-                                        </div><!--//col-10-->
-                                    </div><!--//row-->
-                                </div><!--//person-container-->
-                                <div class="person-divider"></div>
-                                <!--AMiYu-->
-                                <div class="person container">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-3">
-                                            <img src="images/people/AMiYu.jpg" class="img-standard">
-                                            <p class="text-center"><b>A Mi Yu</b></p>
-                                        </div><!--//col-2-->
-                                        <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
-
+                                            <p><b>M. S.</b>, Department of Mechanical and Industrial Engineering, Northeastern University (2012)</p>
+                                        </div>
+                                    </div><!--//col-10-->
+                                </div><!--//row-->
+                            </div><!--//person-container-->
+                            <div class="row b-t b-1px b-color1"></div><!--divider-->
+                            <!--AMiYu-->
+                            <div class="row person">
+                                <div class="reg-text">
+                                    <div class="col-xs-12">
+                                        <p class="text-center"><b>A Mi Yu</b></p>
+                                        <div class="person-about">
+                                            <p><b>M.S.</b>, Department of  Mechanical and Industrial Engineering, Northeastern University (2013)</p>
+                                        </div>
+                                    </div><!--//col-10-->
+                                </div><!--//row-->
+                            </div><!--//person-container-->
+                            <div class="row b-t b-1px b-color1"></div><!--divider-->
+                            <!--Young Lae Kim-->
+                            <div class="row person">
+                                <div class="reg-text">
+                                    <div class="col-xs-12">
+                                        <p class="text-center"><b>Young Lae Kim</b></p>
+                                        <div class="person-about">
                                             <dl class="dl-horizontal">
-                                                <dt>M.S.</dt>
-                                                <dd>Department of  Mechanical and Industrial Engineering,</dd>
-                                                <dd>Northeastern University (2013)</dd>
+                                                <dt>Current Position:</dt>
+                                                <dd>Process TD Engineer, Intel Corporation. Oregon, USA</dd>
                                             </dl>
-
-                                        </div><!--//col-10-->
-                                    </div><!--//row-->
-                                </div><!--//person-container-->
-                                <div class="person-divider"></div>
-                                <!--Young Lae Kim-->
-                                <div class="person container">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-3">
-                                            <img src="images/people/YLKim.jpg" class="img-standard">
-                                            <p class="text-center"><b>Young Lae Kim</b></p>
-                                        </div><!--//col-2-->
-                                        <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
-
-                                            <dl class="dl-horizontal">
-                                                <dt>Process TD Engineer</dt>
-                                                <dd>Intel Corporation</dd>
-                                                <dd>Oregon, USA</dd>
-                                                <dt>Ph.D.</dt>
-                                                <dd>Department of Electrical and Computer Engineering,</dd>
-                                                <dd>Northeastern University (2013)</dd>
-                                            </dl>
-
-                                        </div><!--//col-10-->
-                                    </div><!--//row-->
-                                </div><!--//person-container-->
-                                <div class="person-divider"></div>
-                                <!--Bo Li-->
-                                <div class="person container">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-3">
-                                            <img src="images/people/BoLi.jpg" class="img-standard">
+                                            <p><b>Ph.D.</b>, Department of Electrical and Computer Engineering, Northeastern University (2013)</p>
+                                        </div>
+                                    </div><!--//col-10-->
+                                </div><!--//row-->
+                            </div><!--//person-container-->
+                            <div class="row b-t b-1px b-color1"></div><!--divider-->
+                            <!--Bo Li-->
+                            <div class="row person">
+                                <div class="reg-text">
+                                    <div class="col-xs-12">
+                                        <div class="person-about">
                                             <p class="text-center"><b>Bo Li</b></p>
-                                        </div><!--//col-2-->
-                                        <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
-
                                             <dl class="dl-horizontal">
-                                                <dt>Postdoc Research Assoc.</dt>
-
-                                                <dd>Department of Mechanical and Materials Science,</dd>
-                                                <dd>Rice University</dd>
-                                                <dd>Houston, TX</dd>
-                                                <dt>Ph.D</dt>
-                                                <dd>Department of Mechanical and Industrial Engineering,</dd>
-                                                <dd>Northeastern University (2013)</dd>
+                                                <dt>Current Position:</dt>
+                                                <dd>Postdoctoral Research Associate, Department of Mechanical and Materials Science, Rice University. Houston, TX</dd>
                                             </dl>
-
-                                        </div><!--//col-10-->
-                                    </div><!--//row-->
-                                </div><!--//person-container-->
-                                <div class="person-divider"></div>
-                                <!--Myung Gwen Hahm-->
-                                <div class="person container">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-3">
-                                            <img src="images/people/MGHahm.jpg" class="img-standard">
-                                            <p class="text-center"><b>Myung Gwen Hahm</b></p>
-                                        </div><!--//col-2-->
-                                        <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
-
+                                            <p><b>Ph.D</b>, Department of Mechanical and Industrial Engineering, Northeastern University (2013)</p>
+                                        </div>
+                                    </div><!--//col-10-->
+                                </div><!--//row-->
+                            </div><!--//person-container-->
+                            <div class="row b-t b-1px b-color1"></div><!--divider-->
+                            <!--Myung Gwen Hahm-->
+                            <div class="row person">
+                                <div class="reg-text">
+                                    <div class="col-xs-12">
+                                        <p class="text-center"><b>Myung Gwen Hahm</b></p>
+                                        <div class="person-about">
                                             <dl class="dl-horizontal">
-                                                <dt>Assistant Professor</dt>
-                                                <dd>Research Center for Exotic Nanocarbon</dd>
-                                                <dd>Shinshu, China</dd>
-                                                <dt>Ph.D</dt>
-                                                <dd>Department of Mechanical and Industrial Engineering,</dd>
-                                                <dd>Northeastern University (2010)</dd>
+                                                <dt>Current Position:</dt>
+                                                <dd>Assistant Professor, Research Center for Exotic Nanocarbon. Shinshu, China</dd>
                                             </dl>
-
-                                        </div><!--//col-10-->
-                                    </div><!--//row-->
-                                </div><!--//person-container-->
-                                <div class="person-divider"></div>
-                                <!--Laila Jaberansari-->
-                                <div class="person container">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-3">
-                                            <img src="images/people/LailaJ.jpg" class="img-standard">
-                                            <p class="text-center"><b>Laila Jaberansari</b></p>
-                                        </div><!--//col-2-->
-                                        <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
-
-                                            <dl class="dl-horizontal">
-                                                <dt>Ph.D Candidate</dt>
-                                                <dd>Northwestern University</dd>
-                                                <dt>M.S.</dt>
-                                                <dd>Department of Mechanical and Industrial Engineering,</dd>
-                                                <dd>Northeastern University (2009)</dd>
-                                            </dl>
-
-                                        </div><!--//col-10-->
-                                    </div><!--//row-->
-                                </div><!--//person-container-->
-                                <div class="person-divider"></div>
-                                <!--Rebecca Meritz-->
-                                <div class="person container">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-3">
-                                            <img src="images/people/RMeritz.jpg" class="img-standard">
+                                            <p><b>Ph.D</b>, Department of Mechanical and Industrial Engineering, Northeastern University (2010)</p>
+                                        </div>
+                                    </div><!--//col-10-->
+                                </div><!--//row-->
+                            </div><!--//person-container-->
+                            <div class="row b-t b-1px b-color1"></div><!--divider-->
+                            <!--Laila Jaberansari-->
+                            <div class="row person">
+                                <div class="reg-text">
+                                    <div class="col-xs-12">
+                                        <p class="text-center"><b>Laila Jaberansari</b></p>
+                                        <div class="person-about">
+                                            <p><b>Ph.D Candidate</b>, Northwestern University</p>
+                                            <p><b>M.S.</b>, Department of Mechanical and Industrial Engineering, Northeastern University (2009)</p>
+                                        </div>
+                                    </div><!--//col-10-->
+                                </div><!--//row-->
+                            </div><!--//person-container-->
+                            <div class="row b-t b-1px b-color1"></div><!--divider-->
+                            <!--Rebecca Meritz-->
+                            <div class="row person">
+                                <div class="reg-text">
+                                    <div class="col-xs-12">
+                                        <div class="person-about">
                                             <p class="text-center"><b>Rebecca Meritz</b></p>
-                                        </div><!--//col-2-->
-                                        <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
-
                                             <dl class="dl-horizontal">
-                                                <dt>Junior Programmer</dt>
-                                                <dd>Klarna AB</dd>
-                                                <dt>B.S.</dt>
-                                                <dd>Department of Mechanical and Industrial Engineering,</dd>
-                                                <dd>Northeastern University (2011)</dd>
-
+                                                <dt>Current Position:</dt>
+                                                <dd>Developer at Hemnet</dd>
                                             </dl>
-
-                                        </div><!--//col-10-->
-                                    </div><!--//row-->
-                                </div><!--//person-container-->
-                                <div class="person-divider"></div>
-                                <!--Sang Won You-->
-                                <div class="person container">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-3">
-                                            <img src="images/people/SWYou.jpg" class="img-standard">
+                                            <p><b>B.S.</b>, Department of Mechanical and Industrial Engineering, Northeastern University (2011)</p>
+                                        </div>
+                                    </div><!--//col-10-->
+                                </div><!--//row-->
+                            </div><!--//person-container-->
+                            <div class="row b-t b-1px b-color1"></div><!--divider-->
+                            <!--Sang Won You-->
+                            <div class="row person">
+                                <div class="reg-text">
+                                    <div class="col-xs-12">
+                                        <div class="person-about">
                                             <p class="text-center"><b>Sang Won You</b></p>
-                                        </div><!--//col-2-->
-                                        <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-9">
-
                                             <dl class="dl-horizontal">
-                                                <dt>Employee</dt>
+                                                <dt>Current Position:</dt>
                                                 <dd>LG Corporation</dd>
-                                                <dt></dt>
-                                                <dd></dd>
-                                                <dd></dd>
-                                                <dt>M.S.</dt>
-                                                <dd>Engineering Management,</dd>
-                                                <dd>Northeastern University (2008)</dd>
                                             </dl>
-
-                                        </div><!--//col-10-->
-                                    </div><!--//row-->
-                                </div><!--//person-container-->
-                            </div><!--//reg-text-->
+                                            <p><b>M.S.</b>, Engineering Management, Northeastern University (2008)</p>
+                                        </div>
+                                    </div><!--//col-10-->
+                                </div><!--//row-->
+                            </div><!--//person-container-->
                         </div><!--//container-->
-                    </div><!--//row-->
-                </div><!--//container-->
-            </section><!--//alumni-->
-            <!---->
-
-        </div><!--//member-container-->
+                    </section><!--//alumni-->
+                    <!---->
+                    <!--Padded Section-->
+                    <div class="padded-divider-10"></div>
+                    <!---->
+                </div>
+            </div><!--//col-->
+        </div><!--//members-->
         <!---->
     </div><!--//wrapper-->
     <!---->
-    <!---->
     <!--footer-->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="sponsors-container padding-bottom container">
-                <div class="col-xs-12">
-                    <h3 class="title-text">Sponsors:</h3>
-                </div><!--//col-12-->
+        <div class="container-fluid">
+            <div class="row">
 
-                <div class="reg-text row">
+                <div class="footer-content">
+                    <div class="sponsors-container padding-bottom container-fluid">
+
+                        <div class="reg-text row">
+                            <div class="col-sm-offset-1 col-sm-11">
+                                <h3 class="title-text">Sponsors:</h3>
+                            </div><!--//row-->
+
+                            <div class="col-sm-offset-1 col-sm-7">
+
+                                <div>
+                                    <!---->
+                                    <div class="col-xs-12">
+                                        <div class="col-xs-6">
+                                            <div class="sponsor-box">
+                                                <div class="caption"><p class="text-center">Army Research Office</p></div>
+                                                <img src="images/sponsors/ARO_logo.png" class="img-sponsor" />
+                                            </div>
+                                        </div><!--//col-6-->
 
 
-                    <div class="col-xs-12 col-sm-8">
-                        <div class="col-xs-12">
-                            <div class="col-xs-6">
-                                <div class="sponsor-box">
-                                    <div class="caption"><p class="text-center">Center for High-Rate Nanomanufacturing</p></div>
-                                    <abbr title="NSF-NSEC, Northeastern University"><img src="images/sponsors/CHN_logo.png" class="img-sponsor" /></abbr>
+
+                                        <div class="col-xs-6">
+                                            <div class="sponsor-box">
+                                                <div class="caption"><p class="text-center">National Science Foundation</p></div>
+                                                <img src="images/sponsors/NSF_logo.png" class="img-sponsor" />
+                                            </div>
+                                        </div><!--//col-6-->
+                                    </div><!--//col-12-->
+                                    <!---->
+                                    <div class="col-xs-12">
+                                        <div class="col-xs-6">
+                                            <div class="sponsor-box">
+                                                <div class="caption"><p class="text-center">Ministry of Trade, Industry, and Energy</p></div>
+                                                <img src="images/sponsors/MOTIE_logo.png" class="img-sponsor" />
+                                            </div>
+                                        </div><!--//col-6-->
+                                        <!---->
+                                        <div class="col-xs-6">
+                                            <div class="sponsor-box">
+                                                <div class="caption"><p class="text-center">Department of Defense</p></div>
+                                                <img src="images/sponsors/DOD_logo.png" class="img-sponsor" />
+                                            </div>
+                                        </div><!--//col-6-->
+                                    </div><!--/col-12-->
                                 </div>
-                            </div><!--//col-6-->
+                            </div><!--//col-8-->
 
+                            <div class="col-sm-3">
+                                <div class="caption"><p class="text-center">Northeastern University</p></div>
+                                <img src="images/sponsors/NEU_logo.png" class="img-sponsor-big" />
+                            </div><!--//col-4-->
 
+                        </div><!--//row-->
 
-                            <div class="col-xs-6">
-                                <div class="sponsor-box">
-                                    <div class="caption"><p class="text-center">National Science Foundation</p></div>
-                                    <img src="images/sponsors/NSF_logo.png" class="img-sponsor" />
-                                </div>
-                            </div><!--//col-6-->
-                        </div><!--//col-12-->
+                    </div><!--//sponsors-container-->
+                </div><!--//footer-content-->
 
-                        <div class="col-xs-12">
-                            <div class="col-xs-6">
-                                <div class="sponsor-box">
-                                    <div class="caption"><p class="text-center">Minisitry of Knowledge Economy, Korea</p></div>
-                                    <img src="images/sponsors/MKE_logo.png" class="img-sponsor" />
-                                </div>
-                            </div><!--//col-6-->
-
-                            <div class="col-xs-6">
-                                <div class="sponsor-box">
-                                    <div class="caption"><p class="text-center">Advanced Energy Consortium</p></div>
-                                    <img src="images/sponsors/AEC_logo.png" class="img-sponsor" />
-                                </div>
-                            </div><!--//col-6-->
-                        </div><!--/col-12-->
-                    </div><!--//col-8-->
-
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="caption"><p class="text-center">Northeastern University</p></div>
-                        <img src="images/sponsors/NEU_logo.png" class="img-sponsor-big" />
-                    </div><!--//col-4-->
-                </div><!--//row-->
-
-            </div><!--//sponsors-container-->
-        </div><!--//footer-content-->
-
-        <div class="bottom-bar">
-            <div class="container">
-                <div class="row">
-                    <small class="col-xs-12">Copyright &copy; 2015 Jung's Research Group. All Rights Reserved.</small>
-                </div><!--//row-->
-            </div><!--//container-->
-        </div><!--//bottom-bar-->
+                <div class="bottom-bar">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <small class="col-xs-12">Copyright &copy; 2015 Jung's Research Group. All Rights Reserved.</small>
+                        </div><!--//row-->
+                    </div><!--//container-->
+                </div><!--//bottom-bar-->
+            </div>
+        </div>
     </footer><!--//footer-->
-    <!---->
     <!---->
     <!-- Bootstrap core Javascript -->
     <!-- Placed at the bottom so pages load faster -->
-    <script src="jquery.min.js"></script><!--Faster Loading for below-->
+    <script src="js/jquery.min.js"></script><!--Faster Loading for below-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
 </body><!--//body-->
 </html>

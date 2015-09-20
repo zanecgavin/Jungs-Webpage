@@ -11,105 +11,108 @@
         <!--Icon-->
         <link rel="icon" href="images/favicon/favicon.ico">
         <!--Title-->
-        <title>Publications</title>
-        <!--Fonts-->
-        <link href='http://fonts.googleapis.com/css?family=Jockey+One|Bree+Serif' rel='stylesheet' type='text/css'>
+        <title>Publications | Jung's Research Group</title>
         <!--Global CSS-->
-        <link type="text/css" rel="stylesheet" href="bootstrap.min.css" />
-        <!--Scrolling nav CSS-->
-        <link type="text/css" rel="stylesheet" href="scrolling-nav.css" />
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
         <!--Theme CSS-->
-        <link type="text/css" rel="stylesheet" href="style.css" />
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <!--Colors CSS-->
+        <link type="text/css" rel="stylesheet" href="css/PageColors.css" />
         <!--LOCAL_STYLE_SHEET_START-->
         <style>
-        .publication-year .title-text{
-            font-size: 25px;
-            color: #CC0000;
-        }
-        .publication-list .single-publication{
-            color: black;
-            font-weight: bold;
-            padding-top: 10px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-        }
-        .publication-list .single-publication a{
-            font-weight: normal;
-        }
-        .publication-list a,
-        .publication-list a:hover,
-        .publication-list a:focus{
-            text-decoration: none;
-            color: #000000;         
-        }
-        .publication-year div.title-text{
-            border-bottom: 3px groove #CC0000;
-        }
-        .publication-year{
-            padding-top: 55px;
-        }        
-        .publication-nav .navbar,
-        .publication-nav nav
-        {
-            float: none !important;
-            position: fixed;
-            display: block !important;
-            overflow: visible !important;
-            max-width: 0px;
-            width: auto !important;
-            height: auto;
-            margin-left:auto;
-	        margin-right: auto;
-            margin-bottom: 30px;
-            padding-bottom: 0;
-            border: 0;
-            background: none;
-            box-shadow: none;
-            max-height: none;
-            padding-left: 0;
-            padding-right:0;
-            z-index: 1
-        }
-        .publication-nav .navbar-nav>li>a.nav-year
-        {
-            margin-top: 2px;
-            margin-bottom: 2px;
-            padding: 0px;
-            border-radius: 5px;
-            border: 1px solid black;
-            font-weight: bold;
-            background-color: #FFFFFF;
-            height: auto;
-            width: 30px;
-            text-align: center;
-            color: #000000;
-        }
-        .publication-nav .navbar-nav>li.active>a.nav-year:focus,
-        .publication-nav li a.nav-year:hover,
-        .publication-nav li.active a.page-scroll.nav-year{
-            color: black;
-            background-color: #BCBCBC;
-            border: 1px solid black;
-        }
-        .publication-nav a.twentydash,
-        .publication-nav a.twentydash:hover,
-        .publication-nav a.twentydash:focus,
-        .publication-nav li a.twentydash,
-        .publication-nav li.active a.twentydash,
-        .publication-nav li.active a.page-scroll.twentydash{
-            margin-top: 2px;
-            margin-bottom: 10px;
-            padding: 0px;
-            border: none;
-            border-radius: 0px;
-            border-bottom: 3px groove #CC0000; 
-            font-weight: bold;
-            background: none !important;
-            height: auto;
-            width: 30px;
-            text-align: center;
-            color: #000000;                             
-        }
+            /*Active Tab*/
+            #publications a {
+                color: #444 !important;
+                box-shadow: none !important;
+                background-color: #BCBCBC !important;
+            }
+            /*Publication Citations*/
+            .publication-year .title-text{
+                font-size: 25px;
+                color: #CC0000;
+            }
+            .publication-list .single-publication{
+                color: black;
+                font-weight: bold;
+                padding-top: 10px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            .publication-list .single-publication a{
+                font-weight: normal;
+            }
+            .publication-list a,
+            .publication-list a:hover,
+            .publication-list a:focus{
+                text-decoration: none;
+                color: #000000;         
+            }
+            /*Floating Vertical Nav*/
+            .jumbotron{
+                margin-bottom: 15px;
+            }
+            .publication-nav .navbar,
+            .publication-nav nav
+            {
+                float: none !important;
+                position: fixed;
+                display: block !important;
+                overflow: visible !important;
+                max-width: 0px;
+                width: auto !important;
+                height: auto;
+                margin-left:auto;
+	            margin-right: auto;
+                margin-bottom: 30px;
+                padding-bottom: 0;
+                border: 0;
+                background: none;
+                box-shadow: none;
+                max-height: none;
+                padding-left: 0;
+                padding-right:0;
+                z-index: 1
+            }
+            .publication-nav .navbar-nav>li>a.nav-year
+            {
+                margin-top: 2px;
+                margin-bottom: 2px;
+                padding: 0px;
+                border-radius: 5px;
+                border: 1px solid black;
+                font-weight: bold;
+                background-color: #FFFFFF;
+                height: auto;
+                width: 30px;
+                text-align: center;
+                color: #000000;
+            }
+            .publication-nav .navbar-nav>li.active>a.nav-year:focus,
+            .publication-nav li a.nav-year:hover,
+            .publication-nav li.active a.page-scroll.nav-year{
+                color: black;
+                background-color: #BCBCBC;
+                border: 1px solid black;
+            }
+            .publication-nav a.twentydash,
+            .publication-nav a.twentydash:hover,
+            .publication-nav a.twentydash:focus,
+            .publication-nav li a.twentydash,
+            .publication-nav li.active a.twentydash,
+            .publication-nav li.active a.page-scroll.twentydash{
+                margin-top: 2px;
+                margin-bottom: 10px;
+                padding: 0px;
+                border: none;
+                border-radius: 0px;
+                border-bottom: 3px groove #CC0000; 
+                font-weight: bold;
+                background: none !important;
+                height: auto;
+                width: 30px;
+                text-align: center;
+                color: #000000;                             
+            }
         /*Hide Visibility and change formatting when scroll bar isn't useful*/
         @media (max-height: 600px){
             .publication-nav .navbar,
@@ -128,22 +131,23 @@
                 padding-top: 10px;
             }
         }
+
         </style>
         <!--LOCAL_STYLE_SHEET_END-->
     </head><!--//head-->
     
     <!--BODY_START-->
-<body id="page-top" data-spy="scroll" data-target=".publication-nav">
+<body id="page-top">
     <!---->
     <div class="wrapper">
         <!--top-content-->
-        <div class="top-content container">
+        <div class="top-content">
             <!---->
             <nav class="navbar navbar-fixed-top">
                 <div class="container">
                     <div class="navbar-header">
                         <div class="navbar-brand title-text">
-                            <a href="#page-top" class="page-scroll">Jung's Research Group</a>
+                            <h3 class="title-text">Jung's Research Group</h3>
                         </div>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                             <span class="sr-only">Toggle navigation</span>
@@ -152,15 +156,16 @@
                             <span class="icon-bar"></span>
                         </button>
                     </div>
-                    <div id="navbar" class="navbar-collapse collapse navbar-right">
+                    <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav title-text">
-                            <li><a href="index.html">About Us</a></li>
-                            <li><a href="Research.html">Research</a></li>
-                            <li><a href="Members.html">Members</a></li>
-                            <li class="active"><a href="Publications.html">Publications</a></li>
+                            <li id="home"><a href="index.html">Home</a></li>
+                            <li id="aboutus"><a href="AboutUs.html">About Us</a></li>
+                            <li id="research"><a href="Research.html">Research</a></li>
+                            <li id="members"><a href="Members.html">Members</a></li>
+                            <li id="publications"><a href="Publications.html">Publications</a></li>
                         </ul>
                     </div><!--//navbar-collapse-->
-                </div><!--//container-->
+                </div>
             </nav><!--//nav-->
             <!---->
             <!---->
@@ -168,568 +173,495 @@
             <div class="jumbotron">
             </div><!--//jumbotron-->
             <!---->
+            <!---->
+            <!--up-arrow-->
+            <div class="up-arrow">
+                <div class="navbar navbar-fixed-bottom">
+                    <div class="container">
+                        <div class="navbar-right">
+                            <div class="nav navbar-nav">
+                                <a href="#page-top"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA+UlEQVR42u3XsQ4BQRSFYauj8AAKShIFDXoiUYuGxtPRIRGFxgNQ0QglhQdQKGicSUhksjNz75pZ2WQm+Qtr4nwVEaT+fIIkA9JohB5oHDcgg2ao+349RQP0jAMgxpeoJT1foD4XwQWoxiMjOADTeCQEFUAdZyMoAO44C2ECRB0nI3SAX8dJCBXA1rgREQawPa5FyABX40rEN0B8t69Qx9H458xRLwxQQVuUdQy4ozo6yADdqaIdc6iG9qZLHuABHuABiQEU0JkJKKKLLYA4G9Qg3hW/KU3KRQ6gjNYob7h3RW10tA0QJ4eGqKR4/4Qm6Eb9wET/ObVyXpHRRiG/w7TkAAAAAElFTkSuQmCC" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---->
         </div><!--//top-content-->
         <!---->
-
-        
-        <!---->
-        <div class="publications-container container padding-bottom ">
+        <!--publications-->
+        <div class="publications container-fluid padding-bottom ">
             <div class="row">
-                <!--publication nav-->
-                
-                <div class="col-sm-1">
-                    <div class="publication-nav">
-                        <div class="container">
-                            <nav class="navbar navbar-default" role="navigation">
-                                <ul class="nav navbar-nav">
-                                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                                    <li class="">
-                                        <a class="page-scroll twentydash" href="#page-top">20-</a>
+                <div class="col-sm-offset-1 col-sm-10">
+                    <!--title-->
+                    <div class="publications-title">
+                        <h3 class ="title-text">Publications</h3>
+                    </div>
+                    <!--content-->
+                    <div class="">
+                        <div class="container-2015 publication-year reg-text" id="2015">
+                            <div class="publication-list">
+                                <ol reversed type="1" start="57">
+                                    <li class="single-publication">
+                                        <a href="" target="_blank">
+                                            BoLi, Xin Wang, Hyun Young Jung, Young Lae Kim, Jeremy Robinson, Maxim Zalalutdinov, Sanghyun Hong, Ji Hao, Pulickel Ajayan, Kai-tak Wan, and Yung Joon Jung, "Printing Highly Controlled Suspended Carbon Nanotube Network on Micro-patterned Superhydrophobic Flexible Surface", <b><i>Nature Scientific Reports</i></b>, Accepted
+                                        </a>
                                     </li>
-                                    <li class="">
-                                        <a class="page-scroll nav-year" href="#2015">15</a>
+                                    <li class="single-publication">
+                                        <a href="" target="_blank">
+                                            Bo Li, Yongmin He, Sidong Lei, Sina Najmaei, Yongji Gong, Xin Wang, Jing Zhang, Lulu Ma, Yingchao Yang, Sanghyun Hong, Ji Hao, Gang Shi, Antony George, Kunttal Keyshar, Xiang Zhang, Pei Dong, Liehui Ge, Robert Vajtai, Jun Lou, Yung Joon Jung, andPulickel M. Ajayan "Scalable Transfer of Suspended Two Dimensional Single Crystals", <b><i>Nano Letters</i></b>, Accepted
+                                        </a>
                                     </li>
-                                    <li class="">
-                                        <a class="page-scroll nav-year" href="#2014">14</a>
+                                    <li class="single-publication">
+                                        <a href="" target="_blank">
+                                            Hyun Young Jung, Sanghyun Hong, Ami Yu, Sung Mi Jung, Sun Kyoung Jeoung and Yung Joon Jung, "Efficient lithium storage from modified vertically aligned carbon nanotubes with open-ends", <b><i>RSC Advances</i></b>, Accepted
+                                        </a>
                                     </li>
-                                    <li class="">
-                                        <a class="page-scroll nav-year" href="#2013">13</a>
-                                    </li>
-                                    <li class="">
-                                        <a class="page-scroll nav-year" href="#2012">12</a>
-                                    </li>
-                                    <li class="">
-                                        <a class="page-scroll nav-year" href="#2011">11</a>
-                                    </li>
-                                    <li class="">
-                                        <a class="page-scroll nav-year" href="#2010">10</a>
-                                    </li>
-                                    <li class="">
-                                        <a class="page-scroll nav-year" href="#2009">09</a>
-                                    </li>
-                                    <li class="">
-                                        <a class="page-scroll nav-year" href="#2008">08</a>
-                                    </li>
-                                    <li class="">
-                                        <a class="page-scroll nav-year" href="#2007">07</a>
-                                    </li>
-                                    <li class="">
-                                        <a class="page-scroll nav-year" href="#2006">06</a>
-                                    </li>
-                                    <li class="">
-                                        <a class="page-scroll nav-year" href="#2005">05</a>
-                                    </li>
-                                    <li class="">
-                                        <a class="page-scroll nav-year" href="#2004">04</a>
-                                    </li>
-                                    <li class="">
-                                        <a class="page-scroll nav-year" href="#2003">03</a>
-                                    </li>
-                                    <li class="">
-                                        <a class="page-scroll nav-year" href="#2002">02</a>
-                                    </li>
-                                    <li class="">
-                                        <a class="page-scroll nav-year" href="#2001">01</a>
-                                    </li>
-                                </ul><!--//ul-->
-                            </nav><!--//navbar-->
-                        </div><!--//container-->
-                    </div><!--//publication-nav-->
-                </div>
-                
-                
-                <div class="col-xs-12 col-sm-11">
-                    <div class="container-2015 publication-year reg-text" id="2015">
-                        <div class="title-text">
-                            <p>2015</p>
+                                </ol>
+                            </div>
                         </div>
-                        <div class="publication-list">
-                            <ol reversed type="1" start="55">
-                                <li class="single-publication">
+                        <div class="container-2014 publication-year reg-text" id="2014">
+                            <div class="publication-list">
+                                <ol reversed type="1" start="54">
+                                    <li class="single-publication">
+                                        <a href="http://www.nature.com/ncomms/2014/140915/ncomms5941/full/ncomms5941.html" target="_blank">
+                                            H. Y. Jung, P.T. Araujo, Y. L. Kim, S.M. Jung, X. Jia, S. Hong, C.W. Ahn, J. Kong, M.S. Dresselhaus, S. Kar, Y.J. Jung, "Sculpting carbon bonds for allotropic transformation through solid-state re-engineering of -sp2 carbon.", <b><i>NATURE Communications</i></b>, 5, Article number: 4941 (2014)
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://www.nature.com/nphoton/journal/vaop/ncurrent/full/nphoton.2014.1.html" target="_blank">
+                                            Y. L. Kim, H. Y. Jung, S. Park, B. Li, F. Liu, J. Hao, Y. K. Kwon, Y. J. Jung, S. Kar, "Voltage-switchable photocurrents in single-walled carbon nanotube-silicon junctions for analog and digital optoelectronics.", <b><i>NATURE Photonics</i></b>, 8, 239-243 (2014)
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="container-2013 publication-year reg-text" id="2013">
+                            <div class="publication-list">
+                                <ol reversed type="1" start="52">
 
-                                </li>
-                            </ol>
+                                    <li class="single-publication">
+                                        <a href="http://pubs.acs.org/doi/abs/10.1021/nn4045276" target="_blank">
+                                            M. G. Hahm, J. H. Lee, A. H. C. Hart, S. M. Song, J. Nam, H. Y. Jung, D. P. Hashim, B. Li, T. N. Narayanan, C. D. Park, Y. Zhao. R. Vajtai, Y. A. Kim, T. Hayashi, B. C. Ku, M. Endo, E. Barrera, Y. J. Jung, E. L. Thomas, P. M. Ajayan, "Carbon Nanotube Core Graphitic Shell Hybrid Fibers.", <b><i>ACS Nano</i></b>, 2013, 7(12), pp 10971-10977
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://pubs.rsc.org/en/content/articlelanding/2013/an/c3an01762a#!divAbstract" target="_blank">
+                                            H. Y. Jung, Y. L. Kim, S. Park, A. A Datar, H. J. Lee, J. Huang, S. Somu, A. Busnaina, Y. J. Jung and Y. K. Kwon, "A high-performance H2S detection by redox reactions in semiconducting carbon nanotube-based devices.", <b><i>Analyst,</i></b> 2013, 138, p 7206-7211
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://www.nature.com/srep/2013/130905/srep02588/full/srep02588.html" target="_blank">
+                                            H. Y. Jung, H. Chun, S. Park, S. H. Kang, C. W. Ahn, Y. K. Kwon, M. Upmanyu, P. M. Ajayan, Y. J. Jung, "Liquid metal nanodroplet dynamics inside nanocontainers", <b><i>NATURE Scientific Reports</i></b>, 3, Article number: 2588, DOI:doi:10.1038/srep02588 2013
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://pubs.acs.org/doi/abs/10.1021/nl303682j" target="_blank">
+                                            X. An, F. Liu, Y. J. Jung, S. Kar, "Tunable Graphene-Silicon Heterojunctions for Ultrasensitive Photodetection", <b><i>Nano Letters</i></b>, 13 (3), pp 909-916, 2013
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://jap.aip.org/resource/1/japiau/v113/i24/p244303_s1" target="_blank">
+                                            G. Li, C. Yilmaz, X. An, S. Somu, S. Kar, Y. J. Jung, A. Busnaina, K. Wan, "Adhesion of graphene sheet on nano-patterned substrates with nano-pillar array", <b><i>J. of Appl. Phys.</i></b>, 113, 244303, 2013
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
                         </div>
-                    </div>
-                    <div class="container-2014 publication-year reg-text" id="2014">
-                        <div class="title-text">
-                            <p>2014</p>
+                        <div class="container-2012 publication-year reg-text" id="2012">
+                            <div class="publication-list">
+                                <ol reversed type="1" start="47">
+                                    <li class="single-publication">
+                                        <a href="http://www.nature.com/srep/2012/121114/srep00849/full/srep00849.html" target="_blank">
+                                            S. M. Jung, H. Y. Jung, M. S. Dresselhaus, Y. J. Jung, J. Kong, "A facile route for 3D aerogels from nanostructured 1D and 2D materials", <b><i>NATURE Scientific Reports</i></b>, 2, Article number: 849, DOI:10.1038/srep00849, 2012
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://www.nature.com/srep/2012/121026/srep00773/full/srep00773.html" target="_blank">
+                                            H. Y. Jung, M. B. Karimi, M. G. Hahm, P. M. Ajayan, Y. J. Jung, "Transparent, flexible supercapacitors from nano-engineered carbon films", <b><i>NATURE Scientific Reports</i></b>, 2, Article number: 773, DOI:10.1038/srep00773, 2012
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://pubs.acs.org/doi/abs/10.1021/nl3027372" target="_blank">
+                                            M. G. Hahm, A. L. M. Reddy, D. P. Cole, M. Rivera, J. A. Vento, J. Nam, H. Y. Jung, Y. L. Kim, N. T. Narayanan, D. P. Hashim, C. Galande, Y. J. Jung, M. Bundy, S. Karna, P. M. Ajayan, R. Vajtai, "Carbon Nanotube-Nanocup Hybrid Structures for High Power Supercapacitor Applications", <b><i>Nano Letters</i></b>, 2012, 12 (11), pp 5616-5621
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://pubs.acs.org/doi/abs/10.1021/jp301196u" target="_blank">
+                                            X. An, F. Liu, Y. J. Jung, S. Kar, "Large-Area Synthesis of Graphene on Palladium and their Raman Spectroscopy", <b><i>Journal of Physical Chemistry C</i></b>, 116(31), 16412-16420, 2012
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://link.springer.com/article/10.1007%2Fs00170-012-4426-3" target="_blank">
+                                            H. Abuhimd, G. M. Uddin, A. Zeid, Y. J. Jung, S. Kamarthi, "Chemical vapor deposition-grown vertically aligned single-walled carbon nanotubes length assurance", <b><i>The International Journal of Advanced Manufacturing Technology</i></b>, DOI 10.1007/s00170-012-4426-3, 2012
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://www.tandfonline.com/doi/abs/10.1081/E-ENN2-120048411#.UbvHsUDVCSo" target="_blank">
+                                            Y. L. Kim, L. Jaber-Ansari, M. C Strus, H. Wang, X. Xiong, S. Somu, A. N Chiaramonti, A. Busnaina, R. R Keller, M. Upmanyu, S. Kar and Y. J. Jung, "Highly Organized Single-Walled Carbon Nanotube Networks and Their Electrical Transport Properties", <b><i>Dekker Encyclopedia of Nanoscience and Nanotechnology</i></b>, Second Edition, DOI: 10.1081/E-ENN2- 120048411, 2012
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://pubs.rsc.org/en/content/articlehtml/2012/nr/c2nr30254c" target="_blank">
+                                            M. G. Hahm, H. Wang, H. Y. Jung, S. Hong, S. G. Lee, S. R. Kim, M. Upmanyu, and Y. J. Jung "Bundling dynamics regulates the active mechanics and transport in carbon nanotube networks and their nanocomposites", <b><i>Nanoscale</i></b>, 4, 3584-3590, 2012
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
                         </div>
-                        <div class="publication-list">
-                            <ol reversed type="1" start="54">
-                                <li class="single-publication" >
-                                    <a href="http://www.nature.com/ncomms/2014/140915/ncomms5941/full/ncomms5941.html" target="_blank">
-                                        H. Y. Jung, P.T. Araujo, Y. L. Kim, S.M. Jung, X. Jia, S. Hong, C.W. Ahn, J. Kong, M.S. Dresselhaus, S. Kar, Y.J. Jung, "Sculpting carbon bonds for allotropic transformation through solid-state re-engineering of -sp2 carbon.", <b><i>NATURE Communications</i></b>, 5, Article number: 4941 (2014)
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://www.nature.com/nphoton/journal/vaop/ncurrent/full/nphoton.2014.1.html" target="_blank">
-                                        Y. L. Kim, H. Y. Jung, S. Park, B. Li, F. Liu, J. Hao, Y. K. Kwon, Y. J. Jung, S. Kar, "Voltage-switchable photocurrents in single-walled carbon nanotube-silicon junctions for analog and digital optoelectronics.", <b><i>NATURE Photonics</i></b>, 8, 239-243 (2014)
-                                    </a>
-                                </li>
-                            </ol>
+                        <div class="container-2011 publication-year reg-text" id="2011">
+                            <div class="publication-list">
+                                <ol reversed type="1" start="40">
+                                    <li class="single-publication">
+                                        <a href="http://onlinelibrary.wiley.com/doi/10.1002/aenm.201100402/abstract" target="_blank">
+                                            H. Y. Jung, D. H. Kim, H. K. Chun, S. H. Kim, C. S. Lim, J. Y. Byun, and Y. J. Jung, "Towards Engineering Nanoporous Platinum Thin Film for Highly Efficient Catalytic Applications", <b><i>Advanced Energy Materials</i></b>, 1, 1126-1132, 2011
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://pubs.acs.org/doi/abs/10.1021/nn2008782" target="_blank">
+                                            B. Li, M. G. Hahm, Y. L. Kim, H. Y. Jung, S. Kar, and Y. J. Jung "Highly Organized Two- and Three-Dimensional Single-Walled Carbon Nanotubes-Polymer Hybrid Architectures", <b><i>ACS Nano</i></b>, 5, 4826-4834, 2011
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://iopscience.iop.org/0957-4484/22/26/265713" target="_blank">
+                                            M. C. Strus, A. N. Chiaramonti, Y. L. Kim, Y. J. Jung, and R. R. Keller, "Accelerated Reliability Testing of Highly Aligned Single-Walled Carbon Nanotube Networks Subjected to DC Electrical Stressing", <b><i>Nanotechnology</i></b>, 22, 265713, 2011
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://www.sciencedirect.com/science/article/pii/S0008622311001084" target="_blank">
+                                            Y. L. Kim, H. Y. Jung, S. Kar, and Y. J. Jung, "Cleaning organized single-walled carbon nanotube interconnect structures for reduced interfacial contact resistance", <b><i>Carbon</i></b>, 49, 2450-2458, 2011
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://onlinelibrary.wiley.com/doi/10.1002/adfm.201002659/abstract" target="_blank">
+                                            B. Li, H. Y. Jung, H. Wang, Y. L. Kim, T. Kim, M. G. Hahm, A. Busnaina, M. Upmanyu, and Y. J. Jung "Ultra-thin SWNTs Films with Tunable, Anisotropic Transport Properties", <b><i>Advanced Functional Materials</i></b>, 21, 1810-1815, 2011
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://www.sciencedirect.com/science/article/pii/S0921452610011737" target="_blank">
+                                            A. L. Friedman, H. Chun, D. Heiman, Y. J. Jung, and L. Menon "Investigation of Electrical Transport in Hydrogenated Multiwalled Carbon Nanotubes", <b><i>Physica B</i></b>, 406, 841-845, 2011
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://heattransfer.asmedigitalcollection.asme.org/article.aspx?articleid=1450132" target="_blank">
+                                            M. G. Hahm, Y. Kwon, A. Busnaina and Y. J. Jung, "Structure Controlled Synthesis of Vertically Aligned Carbon Nanotubes using Thermal Chemical Vapor Deposition Process", <b><i>Journal of Heat Transfer</i></b>, 133, 031001, 2011
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
                         </div>
-                    </div>
-                    <div class="container-2013 publication-year reg-text" id="2013">
-                        <div class="title-text">
-                            <p>2013</p>
+                        <div class="container-2010 publication-year reg-text" id="2010">
+                            <div class="publication-list">
+                                <ol reversed type="1" start="33">
+                                    <li class="single-publication">
+                                        <a href="http://pubs.acs.org/doi/abs/10.1021/nn100714v" target="_blank">
+                                            S. Somu, H. Wang, Y. L. Kim, L. Jaber-Ansari, M. G. Hahm, B. Li, T. H. Kim, X. Xiong, Y. J. Jung, M. Upmanyu, and A. Busnaina, "Topological Transitions in Carbon Nanotube Networks via Nanoscale Confinement", <b><i>ACS Nano</i></b>, 4, 4142-4148, 2010
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://prb.aps.org/abstract/PRB/v81/i11/e115461" target="_blank">
+                                            A. L. Friedman, H. Chun, Y. J. Jung, D. Heiman, E. R. Glaser, and L. Menon, "Possible Room-Temperature Ferromagnetism in Hydrogenated Carbon Nanotubes", <b><i>Physical Review B</i></b>, 81, 115461, 2010
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
                         </div>
-                        <div class="publication-list">
-                            <ol reversed type="1" start="52">
-                                
-                                <li class="single-publication">
-                                    <a href="http://pubs.acs.org/doi/abs/10.1021/nn4045276" target="_blank">
-                                        M. G. Hahm, J. H. Lee, A. H. C. Hart, S. M. Song, J. Nam, H. Y. Jung, D. P. Hashim, B. Li, T. N. Narayanan, C. D. Park, Y. Zhao. R. Vajtai, Y. A. Kim, T. Hayashi, B. C. Ku, M. Endo, E. Barrera, Y. J. Jung, E. L. Thomas, P. M. Ajayan, "Carbon Nanotube Core Graphitic Shell Hybrid Fibers.", <b><i>ACS Nano</i></b>, 2013, 7(12), pp 10971-10977
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://pubs.rsc.org/en/content/articlelanding/2013/an/c3an01762a#!divAbstract" target="_blank">
-                                        H. Y. Jung, Y. L. Kim, S. Park, A. A Datar, H. J. Lee, J. Huang, S. Somu, A. Busnaina, Y. J. Jung and Y. K. Kwon, "A high-performance H2S detection by redox reactions in semiconducting carbon nanotube-based devices.", <b><i>Analyst,</i></b> 2013, 138, p 7206-7211
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://www.nature.com/srep/2013/130905/srep02588/full/srep02588.html" target="_blank">
-                                        H. Y. Jung, H. Chun, S. Park, S. H. Kang, C. W. Ahn, Y. K. Kwon, M. Upmanyu, P. M. Ajayan, Y. J. Jung, "Liquid metal nanodroplet dynamics inside nanocontainers", <b><i>NATURE Scientific Reports</i></b>, 3, Article number: 2588, DOI:doi:10.1038/srep02588 2013
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://pubs.acs.org/doi/abs/10.1021/nl303682j" target="_blank">
-                                        X. An, F. Liu, Y. J. Jung, S. Kar, "Tunable Graphene-Silicon Heterojunctions for Ultrasensitive Photodetection", <b><i>Nano Letters</i></b>, 13 (3), pp 909-916, 2013
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://jap.aip.org/resource/1/japiau/v113/i24/p244303_s1" target="_blank">
-                                        G. Li, C. Yilmaz, X. An, S. Somu, S. Kar, Y. J. Jung, A. Busnaina, K. Wan, "Adhesion of graphene sheet on nano-patterned substrates with nano-pillar array", <b><i>J. of Appl. Phys.</i></b>, 113, 244303, 2013
-                                    </a>
-                                </li>
-                            </ol>
+                        <div class="container-2009 publication-year reg-text" id="2009">
+                            <div class="publication-list">
+                                <ol reversed type="1" start="31">
+                                    <li class="single-publication">
+                                        <a href="http://pubs.acs.org/doi/abs/10.1021/nn9007753" target="_blank">
+                                            Y. L. Kim, B. Li, X. An, M. G. Hahm, L. Chen, M. Washington, P. M. Ajayan, S. K. Nayak, A. Busnaina, S. Kar, and Y. J. Jung, "Highly Aligned Scalable Platinum-decorated Single-wall Carbon Nanotube Arrays for Nanoscale Electrical Interconncets", <b><i>ACS Nano</i></b>, 3, 2818-2826, 2009
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://iopscience.iop.org/0957-4484/20/29/295302" target="_blank">
+                                            X. Xiong, C. Chen, P. Ryan, A. Busnaina, Y. J. Jung and M. R. Dokmeci, "Directed Assembly of High-Density Single- Walled Carbon Nanotube Patterns on Flexible Polymer Substrate", <b><i>Nanotechnology</i></b>, 2009, 20, 295302
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://onlinelibrary.wiley.com/doi/10.1002/anie.200901999/abstract" target="_blank">
+                                            G. Meng, F. Han, X. Zhao, B. Chen, D. Yang, J. Liu, M. Kong, X. Zhu, Q. Xu, Y. J. Jung, Y. Yang, Z. Chu, M. Ye, S. Kar, R. Vajitai, and P. M. Ajayan, "A Generic Synthesis Approach to Interconnected Nanowire/Nanotue and Nanotube/Nanowire/Nanotube Heterojunctions with Branced Topology", <b><i>Angewante Chemie</i></b>, 48, 1-6, 2009
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://pubs.acs.org/doi/abs/10.1021/nn9001903" target="_blank">
+                                            H. Chun, M. G. Hahm, Y. Homma, R. Meritz, K. Kuramochi, L. Menon, L. Ci, P. M. Ajayan, Y. J. Jung, "Engineering Low- Aspect Ratio Carbon Nanostructures: Nanocups, Nanorings, and Nanocontainers", <b><i>ACS Nano</i></b>, 3, 1274 - 1278, 2009
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://link.springer.com/article/10.1007%2Fs00339-009-5194-2" target="_blank">
+                                            L. Jaber-Ansari, M. G. Hahm, T. H. Kim, S. Somu, A. Busnania, Y. J. Jung, "Large Scale Highly Organized Single -  Walled Carbon Nanotube Networks for Electrical Devices", <b><i>Applied Physics A</i></b>, DOI 10.1007/s00339 - 009 - 5194 - 2, 2009
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://pubs.acs.org/doi/abs/10.1021/ja8076523" target="_blank">
+                                            L. Jaber-Ansari, M. G. Hahm, S. Somu, Y. Echegoyen, A. Busnaina, Y. J. Jung, "Mechanism of Very Large Scale Assembly of SWNTs in Template Guided Fluidic Assembly Process", <b><i>Journal of the American Chemical Society</i></b>, 131, 804-808, 2009
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://pubs.rsc.org/en/content/articlelanding/2009/jm/b816064c" target="_blank">
+                                            Z. Wu, M. G. Hahm, Y. J. Jung and L. Menon, "Epitaxially Grown GaN Nanowire Networks", <b><i>Journal of Materials Chemistry</i></b>, 19, 463-467, 2009
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
                         </div>
-                    </div>
-                    <div class="container-2012 publication-year reg-text" id="2012">
-                        <div class="title-text">
-                            <p>2012</p>
+                        <div class="container-2008 publication-year reg-text" id="2008">
+                            <div class="publication-list">
+                                <ol reversed type="1" start="24">
+                                    <li class="single-publication">
+                                        <a href="http://pubs.acs.org/doi/abs/10.1021/jp8073877" target="_blank">
+                                            M. G. Hahm, Y. Kwon, E. Lee, C. W. Ahn and Y. J. Jung, "Diameter Selective Growth of  Vertically aligned Single Wall Carbon Nanotubes and Study on Their Growth Mechanism",  <b><i>Journal of Physical Chemistry C</i></b>, 112(44), 17143- 17147, 2008
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://apl.aip.org/resource/1/applab/v93/i9/p093109_s1?isAuthorized=no" target="_blank">
+                                            C.L. Chen, E. Lopez, Y. J. Jung, S. Muftu, S. Selvarasah and M. R. Dokmeci, "Mechanical and electrical evaluation of parylene-C encapsulated carbon nanotube networks on a flexible substrate", <b><i>Applied Physics Letters</i></b>, 93, 093019, 2008
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
                         </div>
-                        <div class="publication-list">
-                            <ol reversed type="1" start="47">
-                                <li class="single-publication">
-                                    <a href="http://www.nature.com/srep/2012/121114/srep00849/full/srep00849.html" target="_blank">
-                                        S. M. Jung, H. Y. Jung, M. S. Dresselhaus, Y. J. Jung, J. Kong, "A facile route for 3D aerogels from nanostructured 1D and 2D materials", <b><i>NATURE Scientific Reports</i></b>, 2, Article number: 849, DOI:10.1038/srep00849, 2012
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://www.nature.com/srep/2012/121026/srep00773/full/srep00773.html" target="_blank">
-                                        H. Y. Jung, M. B. Karimi, M. G. Hahm, P. M. Ajayan, Y. J. Jung, "Transparent, flexible supercapacitors from nano-engineered carbon films", <b><i>NATURE Scientific Reports</i></b>, 2, Article number: 773, DOI:10.1038/srep00773, 2012
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://pubs.acs.org/doi/abs/10.1021/nl3027372" target="_blank">
-                                        M. G. Hahm, A. L. M. Reddy, D. P. Cole, M. Rivera, J. A. Vento, J. Nam, H. Y. Jung, Y. L. Kim, N. T. Narayanan, D. P. Hashim, C. Galande, Y. J. Jung, M. Bundy, S. Karna, P. M. Ajayan, R. Vajtai, "Carbon Nanotube-Nanocup Hybrid Structures for High Power Supercapacitor Applications", <b><i>Nano Letters</i></b>, 2012, 12 (11), pp 5616-5621
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://pubs.acs.org/doi/abs/10.1021/jp301196u" target="_blank">
-                                        X. An, F. Liu, Y. J. Jung, S. Kar, "Large-Area Synthesis of Graphene on Palladium and their Raman Spectroscopy", <b><i>Journal of Physical Chemistry C</i></b>, 116(31), 16412-16420, 2012
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://link.springer.com/article/10.1007%2Fs00170-012-4426-3" target="_blank">
-                                        H. Abuhimd, G. M. Uddin, A. Zeid, Y. J. Jung, S. Kamarthi, "Chemical vapor deposition-grown vertically aligned single-walled carbon nanotubes length assurance", <b><i>The International Journal of Advanced Manufacturing Technology</i></b>, DOI 10.1007/s00170-012-4426-3, 2012
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://www.tandfonline.com/doi/abs/10.1081/E-ENN2-120048411#.UbvHsUDVCSo" target="_blank">
-                                        Y. L. Kim, L. Jaber-Ansari, M. C Strus, H. Wang, X. Xiong, S. Somu, A. N Chiaramonti, A. Busnaina, R. R Keller, M. Upmanyu, S. Kar and Y. J. Jung, "Highly Organized Single-Walled Carbon Nanotube Networks and Their Electrical Transport Properties", <b><i>Dekker Encyclopedia of Nanoscience and Nanotechnology</i></b>, Second Edition, DOI: 10.1081/E-ENN2- 120048411, 2012
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://pubs.rsc.org/en/content/articlehtml/2012/nr/c2nr30254c" target="_blank">
-                                        M. G. Hahm, H. Wang, H. Y. Jung, S. Hong, S. G. Lee, S. R. Kim, M. Upmanyu, and Y. J. Jung "Bundling dynamics regulates the active mechanics and transport in carbon nanotube networks and their nanocomposites", <b><i>Nanoscale</i></b>, 4, 3584-3590, 2012
-                                    </a>
-                                </li>
-                            </ol>
+                        <div class="container-2007 publication-year reg-text" id="2007">
+                            <div class="publication-list">
+                                <ol reversed type="1" start="22">
+                                    <li class="single-publication">
+                                        <a href="http://onlinelibrary.wiley.com/doi/10.1002/smll.200700292/abstract" target="_blank">
+                                            X. Xiong, L. Jaberansari, M. G. Hahm, A. Busnaina and Y. J. Jung, "Building Highly Organized Snigle-Walled Carbon Nanotube Networks Using Template Guided Fluidic Assembly", <b><i>Small</i></b>, 3, 12, 2006 - 2010, 2007
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://apl.aip.org/resource/1/applab/v90/i24/p243108_s1?isAuthorized=no" target="_blank">
+                                            P. Makaram, S. Somu, X. Xiong, A. Busnaina, Y. J. Jung and N. Mcgruer, "Scalable Nanotemplate Assisted Directed Assemply of Single Walled Carbon Nanotubes for Nanoscale Devices", <b><i>Applied Physics Letters</i></b>, 90, 243 108, 2007
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
                         </div>
-                    </div>
-                    <div class="container-2011 publication-year reg-text" id="2011">
-                        <div class="title-text">
-                            <p>2011</p>
+                        <div class="container-2006 publication-year reg-text" id="2006">
+                            <div class="publication-list">
+                                <ol reversed type="1" start="20">
+                                    <li class="single-publication">
+                                        <a href="http://www.worldcat.org/title/nanomanufacturing-handbook/oclc/647637963?referer=di&ht=edition" target="_blank">
+                                            Yung Joon Jung, "Controlled Synthesis of Carbon Nanotubes using Chemical Vapor Deposition Methods", <b><i>Nanomanufacturing Handbook</i></b>, Chapter 4, CRC, 2006
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://pubs.acs.org/doi/abs/10.1021/nl052238x" target="_blank">
+                                            Y. J. Jung, S. Kar, S. Ralapatra, C. Soldano, G. Visheanathan, X. Li, Z. Yao, F. Ou, R. Vajtai, P. M. Ajayan and O. Nalamasu, "Aligned Carbon Nanotube-Polymer Hybrid Architectures For Divers Flexible Electronic Applications", <b><i>Nano Letters</i></b>, 6, 413, 2006
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://jap.aip.org/resource/1/japiau/v99/i2/p024302_s1?isAuthorized=no" target="_blank">
+                                            S. Lastella, G. Mallick, R. Woo, S. P. Karna, Y. J. Jung, P. M. Ajayan, C. Ryu, D. Rider and I. Manners, "Parallel Arrays of Individually addressable Single Walled Carbon Nanotube Field Effect Transisters", <b><i>Journal of Applied Physics</i></b>, 99, 024302, 2006
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
                         </div>
-                        <div class="publication-list">
-                            <ol reversed type="1" start="40">
-                                <li class="single-publication">
-                                    <a href="http://onlinelibrary.wiley.com/doi/10.1002/aenm.201100402/abstract" target="_blank">
-                                        H. Y. Jung, D. H. Kim, H. K. Chun, S. H. Kim, C. S. Lim, J. Y. Byun, and Y. J. Jung, "Towards Engineering Nanoporous Platinum Thin Film for Highly Efficient Catalytic Applications", <b><i>Advanced Energy Materials</i></b>, 1, 1126-1132, 2011
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://pubs.acs.org/doi/abs/10.1021/nn2008782" target="_blank">
-                                        B. Li, M. G. Hahm, Y. L. Kim, H. Y. Jung, S. Kar, and Y. J. Jung "Highly Organized Two- and Three-Dimensional Single-Walled Carbon Nanotubes-Polymer Hybrid Architectures", <b><i>ACS Nano</i></b>, 5, 4826-4834, 2011
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://iopscience.iop.org/0957-4484/22/26/265713" target="_blank">
-                                        M. C. Strus, A. N. Chiaramonti, Y. L. Kim, Y. J. Jung, and R. R. Keller, "Accelerated Reliability Testing of Highly Aligned Single-Walled Carbon Nanotube Networks Subjected to DC Electrical Stressing", <b><i>Nanotechnology</i></b>, 22, 265713, 2011
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://www.sciencedirect.com/science/article/pii/S0008622311001084" target="_blank">
-                                        Y. L. Kim, H. Y. Jung, S. Kar, and Y. J. Jung, "Cleaning organized single-walled carbon nanotube interconnect structures for reduced interfacial contact resistance", <b><i>Carbon</i></b>, 49, 2450-2458, 2011
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://onlinelibrary.wiley.com/doi/10.1002/adfm.201002659/abstract" target="_blank">
-                                        B. Li, H. Y. Jung, H. Wang, Y. L. Kim, T. Kim, M. G. Hahm, A. Busnaina, M. Upmanyu, and Y. J. Jung "Ultra-thin SWNTs Films with Tunable, Anisotropic Transport Properties", <b><i>Advanced Functional Materials</i></b>, 21, 1810-1815, 2011
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://www.sciencedirect.com/science/article/pii/S0921452610011737" target="_blank">
-                                        A. L. Friedman, H. Chun, D. Heiman, Y. J. Jung, and L. Menon "Investigation of Electrical Transport in Hydrogenated Multiwalled Carbon Nanotubes", <b><i>Physica B</i></b>, 406, 841-845, 2011
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://heattransfer.asmedigitalcollection.asme.org/article.aspx?articleid=1450132" target="_blank">
-                                        M. G. Hahm, Y. Kwon, A. Busnaina and Y. J. Jung, "Structure Controlled Synthesis of Vertically Aligned Carbon Nanotubes using Thermal Chemical Vapor Deposition Process", <b><i>Journal of Heat Transfer</i></b>, 133, 031001, 2011
-                                    </a>
-                                </li>
-                            </ol>
+                        <div class="container-2005 publication-year reg-text" id="2005">
+                            <div class="publication-list">
+                                <ol reversed type="1" start="17">
+                                    <li class="single-publication">
+                                        <a href="http://pubs.acs.org/doi/abs/10.1021/nl051486q" target="_blank">
+                                            S. Li, A. Cao, Y. J. Jung, R. Vajtai and P. M. Ajayan, "Bottom-Up Growth of Carbon Nanotube Multilayers", <b><i>Nano Letters</i></b>, 5(10), 1997, 2005
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://www.pnas.org/content/102/20/7074.full" target="_blank">
+                                            G. Meng, Y. J. Jung, A. Cao, R. Vajtai and P. M. Ajayan, "Controlled Synthesis of Hierarchically Branched Carbon Nanotubes Via Rationally Desined Porous Templates", <b><i>Proceeding of National Academy of Science</i></b>, 12 (20), 7074, 2005
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://apl.aip.org/resource/1/applab/v86/i18/p183101_s1?isAuthorized=no" target="_blank">
+                                            S. Biswas, Y. J. Jung, A. Viayaraghavan, R. Vajtai, L. Schowalter and P. M. Ajayan. "Room Temperature Resonant Tunneling of Electrons in Carbon Nanotube Junction Quantum Well",  <b><i>Applied Physics Letters</i></b>, 86, 183101, 2005
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://jap.aip.org/resource/1/japiau/v97/i6/p064303_s1?isAuthorized=no" target="_blank">
+                                            G. Meng, A. Cao, J. Cheng, A. Vijayaraghavan, Y. J. Jung, M. Shima and P. M. Ajayan, "Ordered Ni Nanowire Tip Arrays Sticking out of The Anodic Aluminum Oxide Template", <b><i>Journal of Applied Physics</i></b>, 97(6), 0643031, 2005
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
                         </div>
-                    </div>
-                    <div class="container-2010 publication-year reg-text" id="2010">
-                        <div class="title-text">
-                            <p>2010</p>
+                        <div class="container-2004 publication-year reg-text" id="2004">
+                            <div class="publication-list">
+                                <ol reversed type="1" start="13">
+                                    <li class="single-publication">
+                                        <a href="http://pubs.rsc.org/en/Content/ArticleLanding/2004/JM/b403831b" target="_blank">
+                                            S. Lastella, Y. J. Jung, H. Yang, R. Vajtai, P. M. Ajayan, C. Ryu, D. Ridder and I. Manners, "Density Control of Single Walled Carbon Nanotubes using Patterned Iron Nanoparticle Catalysts Derived from Phase Separated Thin Films of A Polyferrocene Block Copolymer", <b><i>Journal of Materials Chemistry</i></b>, 14(12), 1791, 2004
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://pubs.acs.org/doi/abs/10.1021/nl049550b" target="_blank">
+                                            Y. J. Jung, Y. Homma, R. Vajtai, Y. Kobayashi, T. Ogino and P. M. Ajayan, "Straightening Suspended Single Walled Carbon Nanotubes by Ion Irradiation", <b><i>Nano Letters</i></b>, 4(6), 1109 - 1113, 2004
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
                         </div>
-                        <div class="publication-list">
-                            <ol reversed type="1" start="33">
-                                <li class="single-publication">
-                                    <a href="http://pubs.acs.org/doi/abs/10.1021/nn100714v" target="_blank">
-                                        S. Somu, H. Wang, Y. L. Kim, L. Jaber-Ansari, M. G. Hahm, B. Li, T. H. Kim, X. Xiong, Y. J. Jung, M. Upmanyu, and A. Busnaina, "Topological Transitions in Carbon Nanotube Networks via Nanoscale Confinement", <b><i>ACS Nano</i></b>, 4, 4142-4148, 2010
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://prb.aps.org/abstract/PRB/v81/i11/e115461" target="_blank">
-                                        A. L. Friedman, H. Chun, Y. J. Jung, D. Heiman, E. R. Glaser, and L. Menon, "Possible Room-Temperature Ferromagnetism in Hydrogenated Carbon Nanotubes", <b><i>Physical Review B</i></b>, 81, 115461, 2010
-                                    </a>
-                                </li>
-                            </ol>
+                        <div class="container-2003 publication-year reg-text" id="2003">
+                            <div class="publication-list">
+                                <ol reversed type="1" start="11">
+                                    <li class="single-publication">
+                                        <a href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=1264894&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D1264894" target="_blank">
+                                            R. Vajtai, B. Q. Wei, Y. Jung, A. Cao, S. K. Biswas, G. Ramanath and P. M. Ajayan, "Building and Testing Organized Architectures of Carbon Nanotubes", <b><i>IEEE Transactions on Nanotechnology</i></b>, Invited Paper, 2, 355, 2003
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://pubs.acs.org/doi/abs/10.1021/jp0353845" target="_blank">
+                                            Y. Homma, Y. Kobayashi, T. Ogino, D. Takagi, Y. J. Jung and P. M. Ajayan, "Role of Transition Metal Catalysts in Single-Walled Carbon Nanotube Growth in Chemical Vapor Deposition", <b><i>The Journal of Physical Chemistry B</i></b>, 107, 12161, 2003
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://pubs.acs.org/doi/abs/10.1021/jp0346514" target="_blank">
+                                            Y. J. Jung, Y. Homma, T. Ogino, Y. Kobayashi, D. Takagi, B. Wei, R. Vajtai and P. M. Ajayan, "High - Density, Large Area Single-Walled Carbon Nanotube Networks on Nano - Scale Patterned Substrates", <b><i>The Journal of Physical Chemistry B</i></b>, 107, 6859 - 6864, 2003
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://pubs.acs.org/doi/abs/10.1021/nl034075n" target="_blank">
+                                            Y. J. Jung, B. Wei, R. Vajtai, P. M. Ajayan, Y. Homma, K. Prabhakaran and T. Ogino, "Mechanism on Selective Growth of Carbon Nanotubes on SiO2/Si Patterns", <b><i>Nano Letters</i></b>, 3(4), 561 - 564, 2003
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://pubs.acs.org/doi/abs/10.1021/cm0202815" target="_blank">
+                                            B. Q. Wei, R. Vajtai, Y. J. Jung, J. Ward, G. Ramanath and P. M. Ajayan, "Assembly of Highly - Ogarnized Carbon Nanotube Architectures by Chemical Vapor Deposition", <b><i>Chemistry of Materials</i></b>, 15, 1598 - 1606, 2003
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
                         </div>
-                    </div>
-                    <div class="container-2009 publication-year reg-text" id="2009">
-                        <div class="title-text">
-                            <p>2009</p>
+                        <div class="container-2002 publication-year reg-text" id="2002">
+                            <div class="publication-list">
+                                <ol reversed type="1" start="6">
+                                    <li class="single-publication">
+                                        <a href="http://iopscience.iop.org/0964-1726/11/5/311" target="_blank">
+                                            R. Vajtai, B. Q. Wei, Z. J. Zhang, Y. J. Jung, G. Ramanath and P. M. Ajayan, "Building Carbon Nanotubes and  Their Smart Architectures", <b><i>Smart Materials and Structures</i></b>, 11, 691 - 698, 2002
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://apl.aip.org/resource/1/applab/v81/i7/p1297_s1?isAuthorized=no" target="_blank">
+                                            A. Cao, B. Q. Wei, Y. J. Jung, R. Cajtai, P. M. Ajayan and G. Ramanath, "Growth of Aligned Carbon Nanotubes on Self-Similar Macroscopic Templates", <b><i>Applied Physics Letters</i></b>, 81, 1297, 2002
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://pubs.acs.org/doi/abs/10.1021/jp014640f?journalCode=jpcbfk" target="_blank">
+                                            B. Q. Wei, B. Vajtai, Y. J. Jung, F. Banhart, G. Ramanath and P. M. Ajayan, "Massive Boron Carbide Crystal with Five-Fold Symmetry", <b><i>The Journal of Physical Chemistry B</i></b>, 106, 23, 2002
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://www.nature.com/nature/journal/v416/n6880/full/416495a.html" target="_blank">
+                                            B. Q. Wei, R. Vajtai, Y. J. Jung, J. Ward, Y. Zhang, G. Ramanath and P. M. Ajayan, "Organized Assembly of Carbon Nanotubes", <b><i>NATURE</i></b>, 416, 495, 2002
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
                         </div>
-                        <div class="publication-list">
-                            <ol reversed type="1" start="31">
-                                <li class="single-publication">
-                                    <a href="http://pubs.acs.org/doi/abs/10.1021/nn9007753" target="_blank">
-                                        Y. L. Kim, B. Li, X. An, M. G. Hahm, L. Chen, M. Washington, P. M. Ajayan, S. K. Nayak, A. Busnaina, S. Kar, and Y. J. Jung, "Highly Aligned Scalable Platinum-decorated Single-wall Carbon Nanotube Arrays for Nanoscale Electrical Interconncets", <b><i>ACS Nano</i></b>, 3, 2818-2826, 2009
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://iopscience.iop.org/0957-4484/20/29/295302" target="_blank">
-                                        X. Xiong, C. Chen, P. Ryan, A. Busnaina, Y. J. Jung and M. R. Dokmeci, "Directed Assembly of High-Density Single- Walled Carbon Nanotube Patterns on Flexible Polymer Substrate", <b><i>Nanotechnology</i></b>, 2009, 20, 295302
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://onlinelibrary.wiley.com/doi/10.1002/anie.200901999/abstract" target="_blank">
-                                        G. Meng, F. Han, X. Zhao, B. Chen, D. Yang, J. Liu, M. Kong, X. Zhu, Q. Xu, Y. J. Jung, Y. Yang, Z. Chu, M. Ye, S. Kar, R. Vajitai, and P. M. Ajayan, "A Generic Synthesis Approach to Interconnected Nanowire/Nanotue and Nanotube/Nanowire/Nanotube Heterojunctions with Branced Topology", <b><i>Angewante Chemie</i></b>, 48, 1-6, 2009
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://pubs.acs.org/doi/abs/10.1021/nn9001903" target="_blank">
-                                        H. Chun, M. G. Hahm, Y. Homma, R. Meritz, K. Kuramochi, L. Menon, L. Ci, P. M. Ajayan, Y. J. Jung, "Engineering Low- Aspect Ratio Carbon Nanostructures: Nanocups, Nanorings, and Nanocontainers", <b><i>ACS Nano</i></b>, 3, 1274 - 1278, 2009
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://link.springer.com/article/10.1007%2Fs00339-009-5194-2" target="_blank">
-                                        L. Jaber-Ansari, M. G. Hahm, T. H. Kim, S. Somu, A. Busnania, Y. J. Jung, "Large Scale Highly Organized Single -  Walled Carbon Nanotube Networks for Electrical Devices", <b><i>Applied Physics A</i></b>, DOI 10.1007/s00339 - 009 - 5194 - 2, 2009
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://pubs.acs.org/doi/abs/10.1021/ja8076523" target="_blank">
-                                        L. Jaber-Ansari, M. G. Hahm, S. Somu, Y. Echegoyen, A. Busnaina, Y. J. Jung, "Mechanism of Very Large Scale Assembly of SWNTs in Template Guided Fluidic Assembly Process", <b><i>Journal of the American Chemical Society</i></b>, 131, 804-808, 2009
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://pubs.rsc.org/en/content/articlelanding/2009/jm/b816064c" target="_blank">
-                                        Z. Wu, M. G. Hahm, Y. J. Jung and L. Menon, "Epitaxially Grown GaN Nanowire Networks", <b><i>Journal of Materials Chemistry</i></b>, 19, 463-467, 2009
-                                    </a>
-                                </li>
-                            </ol>
+                        <div class="container-2001 publication-year reg-text" id="2001">
+                            <div class="publication-list">
+                                <ol reversed type="1" start="2">
+                                    <li class="single-publication">
+                                        <a href="http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=8215729" target="_blank">
+                                            Y. J. Jung, B. Q. Wei, R. Vajtai, R. Zhang, G. Ramanath and P. M. Ajayan, "Controlling the Alinged Growth of Carbon Nanotubes by Substrate Selection and Patterning", <b><i>MRS Processing</i></b>, Vol 706, Z3 - 11, 2001 Fall
+                                        </a>
+                                    </li>
+                                    <li class="single-publication">
+                                        <a href="http://www.sciencedirect.com/science/article/pii/S0008622301000410" target="_blank">
+                                            Y. J. Jung, B. Q. Wei, J. Nugent and P. M. Ajanyan, "Controlling Growth of Carbon Microtrees", <b><i>Carbon</i></b>, 39, 2195 - 2201,   2001
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
                         </div>
-                    </div>
-                    <div class="container-2008 publication-year reg-text" id="2008">
-                        <div class="title-text">
-                            <p>2008</p>
-                        </div>
-                        <div class="publication-list">
-                            <ol reversed type="1" start="24">
-                                <li class="single-publication">
-                                    <a href="http://pubs.acs.org/doi/abs/10.1021/jp8073877" target="_blank">
-                                        M. G. Hahm, Y. Kwon, E. Lee, C. W. Ahn and Y. J. Jung, "Diameter Selective Growth of  Vertically aligned Single Wall Carbon Nanotubes and Study on Their Growth Mechanism",  <b><i>Journal of Physical Chemistry C</i></b>, 112(44), 17143- 17147, 2008
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://apl.aip.org/resource/1/applab/v93/i9/p093109_s1?isAuthorized=no" target="_blank">
-                                        C.L. Chen, E. Lopez, Y. J. Jung, S. Muftu, S. Selvarasah and M. R. Dokmeci, "Mechanical and electrical evaluation of parylene-C encapsulated carbon nanotube networks on a flexible substrate", <b><i>Applied Physics Letters</i></b>, 93, 093019, 2008
-                                    </a>
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="container-2007 publication-year reg-text" id="2007">
-                        <div class="title-text">
-                            <p>2007</p>
-                        </div>
-                        <div class="publication-list">
-                            <ol reversed type="1" start="22">
-                                <li class="single-publication">
-                                    <a href="http://onlinelibrary.wiley.com/doi/10.1002/smll.200700292/abstract" target="_blank">
-                                        X. Xiong, L. Jaberansari, M. G. Hahm, A. Busnaina and Y. J. Jung, "Building Highly Organized Snigle-Walled Carbon Nanotube Networks Using Template Guided Fluidic Assembly", <b><i>Small</i></b>, 3, 12, 2006 - 2010, 2007
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://apl.aip.org/resource/1/applab/v90/i24/p243108_s1?isAuthorized=no" target="_blank">
-                                        P. Makaram, S. Somu, X. Xiong, A. Busnaina, Y. J. Jung and N. Mcgruer, "Scalable Nanotemplate Assisted Directed Assemply of Single Walled Carbon Nanotubes for Nanoscale Devices", <b><i>Applied Physics Letters</i></b>, 90, 243 108, 2007
-                                    </a>
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="container-2006 publication-year reg-text" id="2006">
-                        <div class="title-text">
-                            <p>2006</p>
-                        </div>
-                        <div class="publication-list">
-                            <ol reversed type="1" start="20">
-                                <li class="single-publication">
-                                    <a href="http://www.worldcat.org/title/nanomanufacturing-handbook/oclc/647637963?referer=di&ht=edition" target="_blank">
-                                        Yung Joon Jung, "Controlled Synthesis of Carbon Nanotubes using Chemical Vapor Deposition Methods", <b><i>Nanomanufacturing Handbook</i></b>, Chapter 4, CRC, 2006
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://pubs.acs.org/doi/abs/10.1021/nl052238x" target="_blank">
-                                        Y. J. Jung, S. Kar, S. Ralapatra, C. Soldano, G. Visheanathan, X. Li, Z. Yao, F. Ou, R. Vajtai, P. M. Ajayan and O. Nalamasu, "Aligned Carbon Nanotube-Polymer Hybrid Architectures For Divers Flexible Electronic Applications", <b><i>Nano Letters</i></b>, 6, 413, 2006
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://jap.aip.org/resource/1/japiau/v99/i2/p024302_s1?isAuthorized=no" target="_blank">
-                                        S. Lastella, G. Mallick, R. Woo, S. P. Karna, Y. J. Jung, P. M. Ajayan, C. Ryu, D. Rider and I. Manners, "Parallel Arrays of Individually addressable Single Walled Carbon Nanotube Field Effect Transisters", <b><i>Journal of Applied Physics</i></b>, 99, 024302, 2006
-                                    </a>
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="container-2005 publication-year reg-text" id="2005">
-                        <div class="title-text">
-                            <p>2005</p>
-                        </div>
-                        <div class="publication-list">
-                            <ol reversed type="1" start="17">
-                                <li class="single-publication">
-                                    <a href="http://pubs.acs.org/doi/abs/10.1021/nl051486q" target="_blank">
-                                        S. Li, A. Cao, Y. J. Jung, R. Vajtai and P. M. Ajayan, "Bottom-Up Growth of Carbon Nanotube Multilayers", <b><i>Nano Letters</i></b>, 5(10), 1997, 2005
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://www.pnas.org/content/102/20/7074.full" target="_blank">
-                                        G. Meng, Y. J. Jung, A. Cao, R. Vajtai and P. M. Ajayan, "Controlled Synthesis of Hierarchically Branched Carbon Nanotubes Via Rationally Desined Porous Templates", <b><i>Proceeding of National Academy of Science</i></b>, 12 (20), 7074, 2005
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://apl.aip.org/resource/1/applab/v86/i18/p183101_s1?isAuthorized=no" target="_blank">
-                                        S. Biswas, Y. J. Jung, A. Viayaraghavan, R. Vajtai, L. Schowalter and P. M. Ajayan. "Room Temperature Resonant Tunneling of Electrons in Carbon Nanotube Junction Quantum Well",  <b><i>Applied Physics Letters</i></b>, 86, 183101, 2005
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://jap.aip.org/resource/1/japiau/v97/i6/p064303_s1?isAuthorized=no" target="_blank">
-                                        G. Meng, A. Cao, J. Cheng, A. Vijayaraghavan, Y. J. Jung, M. Shima and P. M. Ajayan, "Ordered Ni Nanowire Tip Arrays Sticking out of The Anodic Aluminum Oxide Template", <b><i>Journal of Applied Physics</i></b>, 97(6), 0643031, 2005
-                                    </a>
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="container-2004 publication-year reg-text" id="2004">
-                        <div class="title-text">
-                            <p>2004</p>
-                        </div>
-                        <div class="publication-list">
-                            <ol reversed type="1" start="13">
-                                <li class="single-publication">
-                                    <a href="http://pubs.rsc.org/en/Content/ArticleLanding/2004/JM/b403831b" target="_blank">
-                                        S. Lastella, Y. J. Jung, H. Yang, R. Vajtai, P. M. Ajayan, C. Ryu, D. Ridder and I. Manners, "Density Control of Single Walled Carbon Nanotubes using Patterned Iron Nanoparticle Catalysts Derived from Phase Separated Thin Films of A Polyferrocene Block Copolymer", <b><i>Journal of Materials Chemistry</i></b>, 14(12), 1791, 2004
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://pubs.acs.org/doi/abs/10.1021/nl049550b" target="_blank">
-                                        Y. J. Jung, Y. Homma, R. Vajtai, Y. Kobayashi, T. Ogino and P. M. Ajayan, "Straightening Suspended Single Walled Carbon Nanotubes by Ion Irradiation", <b><i>Nano Letters</i></b>, 4(6), 1109 - 1113, 2004
-                                    </a>
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="container-2003 publication-year reg-text" id="2003">
-                        <div class="title-text">
-                            <p>2003</p>
-                        </div>
-                        <div class="publication-list">
-                            <ol reversed type="1" start="11">
-                                <li class="single-publication">
-                                    <a href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=1264894&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D1264894" target="_blank">
-                                        R. Vajtai, B. Q. Wei, Y. Jung, A. Cao, S. K. Biswas, G. Ramanath and P. M. Ajayan, "Building and Testing Organized Architectures of Carbon Nanotubes", <b><i>IEEE Transactions on Nanotechnology</i></b>, Invited Paper, 2, 355, 2003
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://pubs.acs.org/doi/abs/10.1021/jp0353845" target="_blank">
-                                        Y. Homma, Y. Kobayashi, T. Ogino, D. Takagi, Y. J. Jung and P. M. Ajayan, "Role of Transition Metal Catalysts in Single-Walled Carbon Nanotube Growth in Chemical Vapor Deposition", <b><i>The Journal of Physical Chemistry B</i></b>, 107, 12161, 2003
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://pubs.acs.org/doi/abs/10.1021/jp0346514" target="_blank">
-                                        Y. J. Jung, Y. Homma, T. Ogino, Y. Kobayashi, D. Takagi, B. Wei, R. Vajtai and P. M. Ajayan, "High - Density, Large Area Single-Walled Carbon Nanotube Networks on Nano - Scale Patterned Substrates", <b><i>The Journal of Physical Chemistry B</i></b>, 107, 6859 - 6864, 2003
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://pubs.acs.org/doi/abs/10.1021/nl034075n" target="_blank">
-                                        Y. J. Jung, B. Wei, R. Vajtai, P. M. Ajayan, Y. Homma, K. Prabhakaran and T. Ogino, "Mechanism on Selective Growth of Carbon Nanotubes on SiO2/Si Patterns", <b><i>Nano Letters</i></b>, 3(4), 561 - 564, 2003
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://pubs.acs.org/doi/abs/10.1021/cm0202815" target="_blank">
-                                        B. Q. Wei, R. Vajtai, Y. J. Jung, J. Ward, G. Ramanath and P. M. Ajayan, "Assembly of Highly - Ogarnized Carbon Nanotube Architectures by Chemical Vapor Deposition", <b><i>Chemistry of Materials</i></b>, 15, 1598 - 1606, 2003
-                                    </a>
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="container-2002 publication-year reg-text" id="2002">
-                        <div class="title-text">
-                            <p>2002</p>
-                        </div>
-                        <div class="publication-list">
-                            <ol reversed type="1" start="6">
-                                <li class="single-publication">
-                                    <a href="http://iopscience.iop.org/0964-1726/11/5/311" target="_blank">
-                                        R. Vajtai, B. Q. Wei, Z. J. Zhang, Y. J. Jung, G. Ramanath and P. M. Ajayan, "Building Carbon Nanotubes and  Their Smart Architectures", <b><i>Smart Materials and Structures</i></b>, 11, 691 - 698, 2002
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://apl.aip.org/resource/1/applab/v81/i7/p1297_s1?isAuthorized=no" target="_blank">
-                                        A. Cao, B. Q. Wei, Y. J. Jung, R. Cajtai, P. M. Ajayan and G. Ramanath, "Growth of Aligned Carbon Nanotubes on Self-Similar Macroscopic Templates", <b><i>Applied Physics Letters</i></b>, 81, 1297, 2002
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://pubs.acs.org/doi/abs/10.1021/jp014640f?journalCode=jpcbfk" target="_blank">
-                                        B. Q. Wei, B. Vajtai, Y. J. Jung, F. Banhart, G. Ramanath and P. M. Ajayan, "Massive Boron Carbide Crystal with Five-Fold Symmetry", <b><i>The Journal of Physical Chemistry B</i></b>, 106, 23, 2002
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://www.nature.com/nature/journal/v416/n6880/full/416495a.html" target="_blank">
-                                        B. Q. Wei, R. Vajtai, Y. J. Jung, J. Ward, Y. Zhang, G. Ramanath and P. M. Ajayan, "Organized Assembly of Carbon Nanotubes", <b><i>NATURE</i></b>, 416, 495, 2002
-                                    </a>
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="container-2001 publication-year reg-text" id="2001">
-                        <div class="title-text">
-                            <p>2001</p>
-                        </div>
-                        <div class="publication-list">
-                            <ol reversed type="1" start="2">
-                                <li class="single-publication">
-                                    <a href="http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=8215729" target="_blank">
-                                        Y. J. Jung, B. Q. Wei, R. Vajtai, R. Zhang, G. Ramanath and P. M. Ajayan, "Controlling the Alinged Growth of Carbon Nanotubes by Substrate Selection and Patterning", <b><i>MRS Processing</i></b>, Vol 706, Z3 - 11, 2001 Fall
-                                    </a>
-                                </li>
-                                <li class="single-publication">
-                                    <a href="http://www.sciencedirect.com/science/article/pii/S0008622301000410" target="_blank">
-                                        Y. J. Jung, B. Q. Wei, J. Nugent and P. M. Ajanyan, "Controlling Growth of Carbon Microtrees", <b><i>Carbon</i></b>, 39, 2195 - 2201,   2001
-                                    </a>
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                </div><!--//col-->
-                            
+                    </div><!--//col-->
+                </div>
             </div><!--//row-->
-        </div><!--//publications-container-->
+        </div><!--//publications-->
+        <!---->
     </div><!--//wrapper-->
-    <!---->
     <!---->
     <!--footer-->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="sponsors-container padding-bottom container">
-                <div class="col-xs-12">
-                    <h3 class="title-text">Sponsors:</h3>
-                </div><!--//col-12-->
+        <div class="container-fluid">
+            <div class="row">
 
-                <div class="reg-text row">
+                <div class="footer-content">
+                    <div class="sponsors-container padding-bottom container-fluid">
+
+                        <div class="reg-text row">
+                            <div class="col-sm-offset-1 col-sm-11">
+                                <h3 class="title-text">Sponsors:</h3>
+                            </div><!--//row-->
+
+                            <div class="col-sm-offset-1 col-sm-7">
+
+                                <div>
+                                    <!---->
+                                    <div class="col-xs-12">
+                                        <div class="col-xs-6">
+                                            <div class="sponsor-box">
+                                                <div class="caption"><p class="text-center">Army Research Office</p></div>
+                                                <img src="images/sponsors/ARO_logo.png" class="img-sponsor" />
+                                            </div>
+                                        </div><!--//col-6-->
 
 
-                    <div class="col-xs-12 col-sm-8">
-                        <div class="col-xs-12">
-                            <div class="col-xs-6">
-                                <div class="sponsor-box">
-                                    <div class="caption"><p class="text-center">Center for High-Rate Nanomanufacturing</p></div>
-                                    <abbr title="NSF-NSEC, Northeastern University"><img src="images/sponsors/CHN_logo.png" class="img-sponsor" /></abbr>
+
+                                        <div class="col-xs-6">
+                                            <div class="sponsor-box">
+                                                <div class="caption"><p class="text-center">National Science Foundation</p></div>
+                                                <img src="images/sponsors/NSF_logo.png" class="img-sponsor" />
+                                            </div>
+                                        </div><!--//col-6-->
+                                    </div><!--//col-12-->
+                                    <!---->
+                                    <div class="col-xs-12">
+                                        <div class="col-xs-6">
+                                            <div class="sponsor-box">
+                                                <div class="caption"><p class="text-center">Ministry of Trade, Industry, and Energy</p></div>
+                                                <img src="images/sponsors/MOTIE_logo.png" class="img-sponsor" />
+                                            </div>
+                                        </div><!--//col-6-->
+                                        <!---->
+                                        <div class="col-xs-6">
+                                            <div class="sponsor-box">
+                                                <div class="caption"><p class="text-center">Department of Defense</p></div>
+                                                <img src="images/sponsors/DOD_logo.png" class="img-sponsor" />
+                                            </div>
+                                        </div><!--//col-6-->
+                                    </div><!--/col-12-->
                                 </div>
-                            </div><!--//col-6-->
+                            </div><!--//col-8-->
 
+                            <div class="col-sm-3">
+                                <div class="caption"><p class="text-center">Northeastern University</p></div>
+                                <img src="images/sponsors/NEU_logo.png" class="img-sponsor-big" />
+                            </div><!--//col-4-->
 
+                        </div><!--//row-->
 
-                            <div class="col-xs-6">
-                                <div class="sponsor-box">
-                                    <div class="caption"><p class="text-center">National Science Foundation</p></div>
-                                    <img src="images/sponsors/NSF_logo.png" class="img-sponsor" />
-                                </div>
-                            </div><!--//col-6-->
-                        </div><!--//col-12-->
+                    </div><!--//sponsors-container-->
+                </div><!--//footer-content-->
 
-                        <div class="col-xs-12">
-                            <div class="col-xs-6">
-                                <div class="sponsor-box">
-                                    <div class="caption"><p class="text-center">Minisitry of Knowledge Economy, Korea</p></div>
-                                    <img src="images/sponsors/MKE_logo.png" class="img-sponsor" />
-                                </div>
-                            </div><!--//col-6-->
-
-                            <div class="col-xs-6">
-                                <div class="sponsor-box">
-                                    <div class="caption"><p class="text-center">Advanced Energy Consortium</p></div>
-                                    <img src="images/sponsors/AEC_logo.png" class="img-sponsor" />
-                                </div>
-                            </div><!--//col-6-->
-                        </div><!--/col-12-->
-                    </div><!--//col-8-->
-
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="caption"><p class="text-center">Northeastern University</p></div>
-                        <img src="images/sponsors/NEU_logo.png" class="img-sponsor-big" />
-                    </div><!--//col-4-->
-                </div><!--//row-->
-
-            </div><!--//sponsors-container-->
-        </div><!--//footer-content-->
-
-        <div class="bottom-bar">
-            <div class="container">
-                <div class="row">
-                    <small class="col-xs-12">Copyright &copy; 2015 Jung's Research Group. All Rights Reserved.</small>
-                </div><!--//row-->
-            </div><!--//container-->
-        </div><!--//bottom-bar-->
+                <div class="bottom-bar">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <small class="col-xs-12">Copyright &copy; 2015 Jung's Research Group. All Rights Reserved.</small>
+                        </div><!--//row-->
+                    </div><!--//container-->
+                </div><!--//bottom-bar-->
+            </div>
+        </div>
     </footer><!--//footer-->
-    <!---->
     <!---->
     <!-- Placed at the bottom so pages load faster -->
     <!-- jQuery -->
-    <script src="jquery.min.js"></script><!--Faster Loading for below-->
+    <script src="js/jquery.min.js"></script><!--Faster Loading for below-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
-    <script src="bootstrap.min.js"></script>
-    <!-- Scrolling Nav JavaScript -->
-    <script src="jquery.easing.min.js"></script>
-    <script src="scrolling-nav.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body><!--//body-->
 </html>
 
