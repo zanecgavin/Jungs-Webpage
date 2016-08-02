@@ -22,10 +22,10 @@
         <style>
             /*Active Tab*/
             #publications a {
-                color: #444 !important;
+                color: #1A4779 !important;
                 box-shadow: none !important;
-                background-color: #BCBCBC !important;
             }
+
             /*Publication Citations*/
             .publication-year .title-text{
                 font-size: 25px;
@@ -47,95 +47,9 @@
                 text-decoration: none;
                 color: #000000;         
             }
-            /*Floating Vertical Nav*/
-            .jumbotron{
-                margin-bottom: 15px;
-            }
-            .publication-nav .navbar,
-            .publication-nav nav
-            {
-                float: none !important;
-                position: fixed;
-                display: block !important;
-                overflow: visible !important;
-                max-width: 0px;
-                width: auto !important;
-                height: auto;
-                margin-left:auto;
-	            margin-right: auto;
-                margin-bottom: 30px;
-                padding-bottom: 0;
-                border: 0;
-                background: none;
-                box-shadow: none;
-                max-height: none;
-                padding-left: 0;
-                padding-right:0;
-                z-index: 1
-            }
-            .publication-nav .navbar-nav>li>a.nav-year
-            {
-                margin-top: 2px;
-                margin-bottom: 2px;
-                padding: 0px;
-                border-radius: 5px;
-                border: 1px solid black;
-                font-weight: bold;
-                background-color: #FFFFFF;
-                height: auto;
-                width: 30px;
-                text-align: center;
-                color: #000000;
-            }
-            .publication-nav .navbar-nav>li.active>a.nav-year:focus,
-            .publication-nav li a.nav-year:hover,
-            .publication-nav li.active a.page-scroll.nav-year{
-                color: black;
-                background-color: #BCBCBC;
-                border: 1px solid black;
-            }
-            .publication-nav a.twentydash,
-            .publication-nav a.twentydash:hover,
-            .publication-nav a.twentydash:focus,
-            .publication-nav li a.twentydash,
-            .publication-nav li.active a.twentydash,
-            .publication-nav li.active a.page-scroll.twentydash{
-                margin-top: 2px;
-                margin-bottom: 10px;
-                padding: 0px;
-                border: none;
-                border-radius: 0px;
-                border-bottom: 3px groove #CC0000; 
-                font-weight: bold;
-                background: none !important;
-                height: auto;
-                width: 30px;
-                text-align: center;
-                color: #000000;                             
-            }
-        /*Hide Visibility and change formatting when scroll bar isn't useful*/
-        @media (max-height: 600px){
-            .publication-nav .navbar,
-            .publication-nav nav {
-                position: absolute;
-            }
-        }
-        @media (max-width: 767px){
-            .publication-nav .navbar,
-            .publication-nav .navbar.navbar-collapse
-            {
-                visibility: hidden !important;
-                
-            }
-            .publication-year{
-                padding-top: 10px;
-            }
-        }
-
         </style>
         <!--LOCAL_STYLE_SHEET_END-->
     </head><!--//head-->
-    
     <!--BODY_START-->
 <body id="page-top">
     <!---->
@@ -144,27 +58,54 @@
         <div class="top-content">
             <!---->
             <nav class="navbar navbar-fixed-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <div class="navbar-brand title-text">
-                            <h3 class="title-text">Jung's Research Group</h3>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="">
+                                    <!--<a href="index.html"><h4 class="title-text">Jung's Research Group</h4></a>-->
+                                    <!--<a href="index.html">
+                                <div class="jrg-logo">
+                                    <img src="images/JRG_logo.png" />
+                                </div>
+                            </a>
+                            <div class="neu-logo">
+                                <img src="images/NEU_logo.png" />
+                            </div>-->
+                                    <div class="navbar-brand navbar-left">
+                                        <a href="index.html">
+                                            <div class="jrg-logo">
+                                                <img src="images/JRG_logo.png">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="navbar-brand navbar-right">
+                                <div class="neu-logo">
+                                    <img src="images/NEU_logo.png">
+                                </div>
+                            </div>
                         </div>
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
                     </div>
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav title-text">
-                            <li id="home"><a href="index.html">Home</a></li>
-                            <li id="aboutus"><a href="AboutUs.html">About Us</a></li>
-                            <li id="research"><a href="Research.html">Research</a></li>
-                            <li id="members"><a href="Members.html">Members</a></li>
-                            <li id="publications"><a href="Publications.html">Publications</a></li>
-                        </ul>
-                    </div><!--//navbar-collapse-->
+
+                    <div class="row">
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav nav-justified title-text">
+                                <li id="aboutus"><a href="AboutUs.html">About Us</a></li>
+                                <li id="research"><a href="Research.html">Research</a></li>
+                                <li id="members"><a href="Members.html">Members</a></li>
+                                <li id="publications"><a href="Publications.html">Publications</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </nav><!--//nav-->
             <!---->
@@ -190,31 +131,42 @@
         </div><!--//top-content-->
         <!---->
         <!--publications-->
-        <div class="publications container-fluid padding-bottom ">
+        <div class="publications container-fluid padding-top-bottom ">
+            <div class="title-text blue-title">
+                <h3 class="title-text">Publications</h3>
+                <br />
+            </div>
             <div class="row">
-                <div class="col-sm-offset-1 col-sm-10">
-                    <!--title-->
-                    <div class="publications-title">
-                        <h3 class ="title-text">Publications</h3>
-                    </div>
+                <div class="col-xs-12">
                     <!--content-->
                     <div class="">
+                        <div class="container-2015 publication-year reg-text" id="2016">
+                            <div class="publication-list">
+                                <ol reversed type="1" start="58">
+                                    <li class="single-publication">
+                                        <a href=" http://dx.doi.org/10.1063/1.4940955" target="_blank">
+                                            X. Wang, B. Li, J. Hao, Y.J. Jung, K. Wan, "Mechanical characterization of suspended strips of meshed single-walled carbon nanotubes", <b><i>Journal of Applied Physics</i></b>, 119, 045305, 2016
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
                         <div class="container-2015 publication-year reg-text" id="2015">
                             <div class="publication-list">
                                 <ol reversed type="1" start="57">
                                     <li class="single-publication">
-                                        <a href="" target="_blank">
-                                            BoLi, Xin Wang, Hyun Young Jung, Young Lae Kim, Jeremy Robinson, Maxim Zalalutdinov, Sanghyun Hong, Ji Hao, Pulickel Ajayan, Kai-tak Wan, and Yung Joon Jung, "Printing Highly Controlled Suspended Carbon Nanotube Network on Micro-patterned Superhydrophobic Flexible Surface", <b><i>Nature Scientific Reports</i></b>, Accepted
+                                        <a href="http://www.nature.com/articles/srep15908" target="_blank">
+                                            B. Li, X. Wang, H.Y. Jung, Y.L. Kim, J. Robinson, M. Zalalutdinov, S. Hong, J. Hao, P.M. Ajayan, K. Wan, and Y.J. Jung, "Printing Highly Controlled Suspended Carbon Nanotube Network on Micro-patterned Superhydrophobic Flexible Surface", <b><i>Nature Scientific Reports</i></b>, 5, Article number: 15908, DOI: 10.1038/srep15908 2015
                                         </a>
                                     </li>
                                     <li class="single-publication">
-                                        <a href="" target="_blank">
-                                            Bo Li, Yongmin He, Sidong Lei, Sina Najmaei, Yongji Gong, Xin Wang, Jing Zhang, Lulu Ma, Yingchao Yang, Sanghyun Hong, Ji Hao, Gang Shi, Antony George, Kunttal Keyshar, Xiang Zhang, Pei Dong, Liehui Ge, Robert Vajtai, Jun Lou, Yung Joon Jung, andPulickel M. Ajayan "Scalable Transfer of Suspended Two Dimensional Single Crystals", <b><i>Nano Letters</i></b>, Accepted
+                                        <a href="http://pubs.acs.org/doi/abs/10.1021/acs.nanolett.5b01210" target="_blank">
+                                            B. Li, Y. He, S. Lei, S. Najmaei, Y. Gong, X. Wang, J. Zhang, L. Ma, Y. Yang, S. Hong, J. Hao, G. Shi, A. George, K. Keyshar, X. Zhang, P. Dong, L. Ge, R. Vajtai, J. Lou, Y.J. Jung, and P.M. Ajayan "Scalable Transfer of Suspended Two Dimensional Single Crystals", <b><i>Nano Letters</i></b>, 15 (8), 5089-5097, 2015
                                         </a>
                                     </li>
                                     <li class="single-publication">
-                                        <a href="" target="_blank">
-                                            Hyun Young Jung, Sanghyun Hong, Ami Yu, Sung Mi Jung, Sun Kyoung Jeoung and Yung Joon Jung, "Efficient lithium storage from modified vertically aligned carbon nanotubes with open-ends", <b><i>RSC Advances</i></b>, Accepted
+                                        <a href="http://pubs.rsc.org/en/content/articlelanding/2015/ra/c5ra14263f" target="_blank">
+                                            H.Y. Jung, S. Hong, A. Yu, S.M. Jung, S.K. Jeoung and Y.J. Jung, "Efficient lithium storage from modified vertically aligned carbon nanotubes with open-ends", <b><i>RSC Advances</i></b>, 5(84), 68875-68880, 2015
                                         </a>
                                     </li>
                                 </ol>
@@ -225,7 +177,7 @@
                                 <ol reversed type="1" start="54">
                                     <li class="single-publication">
                                         <a href="http://www.nature.com/ncomms/2014/140915/ncomms5941/full/ncomms5941.html" target="_blank">
-                                            H. Y. Jung, P.T. Araujo, Y. L. Kim, S.M. Jung, X. Jia, S. Hong, C.W. Ahn, J. Kong, M.S. Dresselhaus, S. Kar, Y.J. Jung, "Sculpting carbon bonds for allotropic transformation through solid-state re-engineering of -sp2 carbon.", <b><i>NATURE Communications</i></b>, 5, Article number: 4941 (2014)
+                                            H. Y. Jung, P.T. Araujo, Y. L. Kim, S.M. Jung, X. Jia, S. Hong, C.W. Ahn, J. Kong, M.S. Dresselhaus, S. Kar, Y.J. Jung, "Sculpting carbon bonds for allotropic transformation through solid-state re-engineering of -sp<sup>2</sup> carbon.", <b><i>NATURE Communications</i></b>, 5, Article number: 4941 (2014)
                                         </a>
                                     </li>
                                     <li class="single-publication">
@@ -584,84 +536,22 @@
     <!---->
     <!--footer-->
     <footer class="footer">
-        <div class="container-fluid">
-            <div class="row">
-
-                <div class="footer-content">
-                    <div class="sponsors-container padding-bottom container-fluid">
-
-                        <div class="reg-text row">
-                            <div class="col-sm-offset-1 col-sm-11">
-                                <h3 class="title-text">Sponsors:</h3>
-                            </div><!--//row-->
-
-                            <div class="col-sm-offset-1 col-sm-7">
-
-                                <div>
-                                    <!---->
-                                    <div class="col-xs-12">
-                                        <div class="col-xs-6">
-                                            <div class="sponsor-box">
-                                                <div class="caption"><p class="text-center">Army Research Office</p></div>
-                                                <img src="images/sponsors/ARO_logo.png" class="img-sponsor" />
-                                            </div>
-                                        </div><!--//col-6-->
-
-
-
-                                        <div class="col-xs-6">
-                                            <div class="sponsor-box">
-                                                <div class="caption"><p class="text-center">National Science Foundation</p></div>
-                                                <img src="images/sponsors/NSF_logo.png" class="img-sponsor" />
-                                            </div>
-                                        </div><!--//col-6-->
-                                    </div><!--//col-12-->
-                                    <!---->
-                                    <div class="col-xs-12">
-                                        <div class="col-xs-6">
-                                            <div class="sponsor-box">
-                                                <div class="caption"><p class="text-center">Ministry of Trade, Industry, and Energy</p></div>
-                                                <img src="images/sponsors/MOTIE_logo.png" class="img-sponsor" />
-                                            </div>
-                                        </div><!--//col-6-->
-                                        <!---->
-                                        <div class="col-xs-6">
-                                            <div class="sponsor-box">
-                                                <div class="caption"><p class="text-center">Department of Defense</p></div>
-                                                <img src="images/sponsors/DOD_logo.png" class="img-sponsor" />
-                                            </div>
-                                        </div><!--//col-6-->
-                                    </div><!--/col-12-->
-                                </div>
-                            </div><!--//col-8-->
-
-                            <div class="col-sm-3">
-                                <div class="caption"><p class="text-center">Northeastern University</p></div>
-                                <img src="images/sponsors/NEU_logo.png" class="img-sponsor-big" />
-                            </div><!--//col-4-->
-
-                        </div><!--//row-->
-
-                    </div><!--//sponsors-container-->
-                </div><!--//footer-content-->
-
-                <div class="bottom-bar">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <small class="col-xs-12">Copyright &copy; 2015 Jung's Research Group. All Rights Reserved.</small>
-                        </div><!--//row-->
-                    </div><!--//container-->
-                </div><!--//bottom-bar-->
-            </div>
-        </div>
+        <div class="bottom-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <small class="col-xs-12 text-center">Copyright &copy; 2015 Jung's Research Group. All Rights Reserved.</small>
+                </div><!--//row-->
+            </div><!--//container-->
+        </div><!--//bottom-bar-->
     </footer><!--//footer-->
     <!---->
     <!-- Placed at the bottom so pages load faster -->
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script><!--Faster Loading for below-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/shrinkNav.js"></script>
 </body><!--//body-->
 </html>
 

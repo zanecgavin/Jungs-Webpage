@@ -22,9 +22,13 @@
     <style>
         /*Active Tab*/
         #research a {
-            color: #444 !important;
+            color: #1A4779 !important;
             box-shadow: none !important;
-            background-color: #BCBCBC !important;
+        }
+
+        .research-img{
+            width: 75%;
+            height: auto;
         }
     </style>
     <!--LOCAL_STYLE_SHEET_END-->
@@ -38,27 +42,54 @@
         <div class="top-content">
             <!---->
             <nav class="navbar navbar-fixed-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <div class="navbar-brand title-text">
-                            <h3 class="title-text">Jung's Research Group</h3>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="">
+                                    <!--<a href="index.html"><h4 class="title-text">Jung's Research Group</h4></a>-->
+                                    <!--<a href="index.html">
+                                <div class="jrg-logo">
+                                    <img src="images/JRG_logo.png" />
+                                </div>
+                            </a>
+                            <div class="neu-logo">
+                                <img src="images/NEU_logo.png" />
+                            </div>-->
+                                    <div class="navbar-brand navbar-left">
+                                        <a href="index.html">
+                                            <div class="jrg-logo">
+                                                <img src="images/JRG_logo.png">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="navbar-brand navbar-right">
+                                <div class="neu-logo">
+                                    <img src="images/NEU_logo.png">
+                                </div>
+                            </div>
                         </div>
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
                     </div>
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav title-text">
-                            <li id="home"><a href="index.html">Home</a></li>
-                            <li id="aboutus"><a href="AboutUs.html">About Us</a></li>
-                            <li id="research"><a href="Research.html">Research</a></li>
-                            <li id="members"><a href="Members.html">Members</a></li>
-                            <li id="publications"><a href="Publications.html">Publications</a></li>
-                        </ul>
-                    </div><!--//navbar-collapse-->
+
+                    <div class="row">
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav nav-justified title-text">
+                                <li id="aboutus"><a href="AboutUs.html">About Us</a></li>
+                                <li id="research"><a href="Research.html">Research</a></li>
+                                <li id="members"><a href="Members.html">Members</a></li>
+                                <li id="publications"><a href="Publications.html">Publications</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </nav><!--//nav-->
             <!---->
@@ -85,30 +116,33 @@
         <!---->
         <!--research-->
         <div class="research container-fluid padding-top-bottom">
-
+            <div class="title-text blue-title">
+                <h3 class="title-text">Research</h3>
+                <br />
+            </div>
             <div class="row">
-                <div class="col-md-6">
-                    <div class="thumbnail">
+                <div class="col-xs-12">
+                    <div class="thumbnail b-color1">
                         <div class="padding-top-bottom">
-                            <img src="images/projects/VACNT.jpg" class="center-block" alt="...">
+                            <img src="images/projects/StuctureAndMorph.png" class="research-img center-block" alt="...">
                             <div class="caption reg-text">
-                                <h3 class="title-text">Structure Controlled Synthesis of Single-Walled Carbon Nanotubes</h3>
+                                <h3 class="title-text">Structure and morphology controlled synthesis of nanocarbon materials and extremely narrow silicon nanowires</h3>
                                 <p>
-                                    Nanotechnologies based on single walled carbon nanotubes (SWNTs) are developing very rapidly because of their outstanding mechanical, electrical, and optical properties. However, large scale synthesis of SWNT with desired structures still have many difficulties. We focuse on structure controlled sysnthesis of SWNTs in a high density and quality using a chemical vapor deposition and the selective diameter distribution of vertically aligned single walled carbon nanotubes (VA-SWNTs).
+                                    Nanotechnologies based on sp<sup>2</sup> nanocarbon and silicon materials are developing very rapidly because of their unique mechanical, electronic, thermal and optical properties. However, large-scale synthesis of these 1-2D nanomaterials with desired structures still have many challenges due to the difficulty in controlling atomic-scale physical and chemical reactions during the synthesis process and a lack of understanding the underlying mechanism. The focus in our group is on investigating the synthesis processes for structure and morphology controlled CNTs, graphene, and nanoporous graphites using various chemical vapor deposition processes and nano-template synthesis method for applications in high density and multifunctional energy storage systems, flexible field-emission devices, superhydrophobic surfaces, friction and adhesion controlled lightweight materials. We also study and develop a technique to synthesize high density ultra-small SiNWs forming directly on Si wafers by investigating dry etching processes which can fully harness the unique chemical and quantum mechanical properties of silicon.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="thumbnail">
+                <div class="col-xs-12">
+                    <div class="thumbnail b-color1">
                         <div class="padding-top-bottom">
-                            <img src="images/projects/Nanocup.jpg" class="center-block" alt="...">
+                            <img src="images/projects/Nanomanufacturing.png" class="research-img center-block" alt="...">
                             <div class="caption reg-text">
-                                <h3 class="title-text">Controlled Synthesis of Graphitic Carbon Based Materials and Their Applications</h3>
+                                <h3 class="title-text">Nanomanufacturing processes for high performance and multifunctional sensors and energy storage devices</h3>
                                 <p>
-                                    The synthesis of carbon nanostructures, with interesting morphologies, has created a revolution in nanotechnology; carbon nanotube is a case in point, but other nanoscale morphologies of graphitic carbon could provide compelling uses. We focus on the building architectures from graphitic carbon, having up to 105 times smaller length/diameter(L/D) ratios compared to conventional nanotubes, revealing unique morphologies of nanocups, nanorings, and large area connected nanocup arrays and their various applications of drug delivery, nanogram container, and energy storage and so on.
+                                    Scalable fabrication of nano, micro to macroscopic functional devices and systems that harness 2-3 dimensional and multiscale architectures of CNTs, graphene, and other 1-2D nanomaterials allow high performance, unique and multifunctional devices in broad ranges of applications. Our group studies nanomanufacturing processes such as fluidic & template guided assembly, direct printing transfer and device integration techniques for fabricating 1-3D dimensional nano/micro architectures of CNTs, graphene, 2D crystals and nanoporous film on various substrates (Si, SiO<sub>2</sub>, metals, polymer, and nano/micro-patterned flexible polymer surfaces). Using these unprecedented nanostructured architectures our group also studies and develops high performance photo-detector, ions and chemical sensors, flexible electrical interconnects, and flexible and transparent energy storage devices.
                                 </p>
                             </div>
                         </div>
@@ -117,28 +151,14 @@
             </div>
 
             <div class="row">
-                <div class="col-md-6">
-                    <div class="thumbnail">
+                <div class="col-xs-12">
+                    <div class="thumbnail b-color1">
                         <div class="padding-top-bottom">
-                            <img src="images/projects/Bo.jpg" class="center-block" alt="...">
+                            <img src="images/projects/Reengineering.png" class="research-img center-block" alt="...">
                             <div class="caption reg-text">
-                                <h3 class="title-text">Flexible Carbon Nanotubes Based Devices and Applications</h3>
+                                <h3 class="title-text">Solid-state re-engineering of sp<sup>2</sup> nanocarbon networks</h3>
                                 <p>
-                                    Flexible carbon nanotube based devices are candidate for the next generation electronics. We focuses on how to transfer carbon nanotube based structures such as film, pattern, line or individual nanotube onto different flexible polymer substrates to built devices and investigate the electrical, mechanical and optical properties of the nanodevices. The fluidic assembly and CVD technique will be utilized to build 1-D to 3-D carbon nanotube structure ranging from nanoscale to macroscale.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="thumbnail">
-                        <div class="padding-top-bottom">
-                            <img src="images/projects/Nanofiber.jpg" class="center-block" alt="...">
-                            <div class="caption reg-text">
-                                <h3 class="title-text">Highly Aligned, Organized, and Scalable SWNT Architectures for Nanoscale Interconnects</h3>
-                                <p>
-                                    Aligned SWNT networks in nanoscale architectures become a promising material for future nanoscale interconnects. We fabricate highly aligned, organized, and scalable SWNT networks in nanosclae using a developed template guided fluidic assembly and decorate Platinum nanoclusters on their surfaces and investigate their electrical and thermal properties. Pt decoration on SWNTs using an electrochemical approach can simultaneously convert semiconducting CNTs into metallic ones, showing the increase of conductance of existing metallic CNTs.
+                                    The combination of superior electronic, thermal, and mechanical properties makes nanocarbon (nanotube and graphene) networks an ideal building block for high-performance multifunctional materials, but these advantages are eroded in van der Waals connected networks. Our group investigates a novel carbon nanostructure engineering process by applying controlled input voltages in nanocarbon networks and fibers. This highly controllable method allows us to create covalently bonded carbon-carbon sp<sup>2</sup> molecular junctions between assembled nanocarbon structures and can further transform them into various sp<sup>2</sup> allotropes such as larger diameter SWCNTs, multi-walled carbon nanotubes, or multi-layered graphene nanoribbon with a tremendous property improvement. These molecular structure engineered nanocarbon (nanotube and graphene) networks and fibers are anticipated to be used in broader applications, particularly strong and highly conductive multifunctional fibers and reinforcements for lightweight and high performance composites, electronics, and electrodes for energy storage devices.
                                 </p>
                             </div>
                         </div>
@@ -151,83 +171,21 @@
     <!---->
     <!--footer-->
     <footer class="footer">
-        <div class="container-fluid">
-            <div class="row">
-
-                <div class="footer-content">
-                    <div class="sponsors-container padding-bottom container-fluid">
-
-                        <div class="reg-text row">
-                            <div class="col-sm-offset-1 col-sm-11">
-                                <h3 class="title-text">Sponsors:</h3>
-                            </div><!--//row-->
-
-                            <div class="col-sm-offset-1 col-sm-7">
-
-                                <div>
-                                    <!---->
-                                    <div class="col-xs-12">
-                                        <div class="col-xs-6">
-                                            <div class="sponsor-box">
-                                                <div class="caption"><p class="text-center">Army Research Office</p></div>
-                                                <img src="images/sponsors/ARO_logo.png" class="img-sponsor" />
-                                            </div>
-                                        </div><!--//col-6-->
-
-
-
-                                        <div class="col-xs-6">
-                                            <div class="sponsor-box">
-                                                <div class="caption"><p class="text-center">National Science Foundation</p></div>
-                                                <img src="images/sponsors/NSF_logo.png" class="img-sponsor" />
-                                            </div>
-                                        </div><!--//col-6-->
-                                    </div><!--//col-12-->
-                                    <!---->
-                                    <div class="col-xs-12">
-                                        <div class="col-xs-6">
-                                            <div class="sponsor-box">
-                                                <div class="caption"><p class="text-center">Ministry of Trade, Industry, and Energy</p></div>
-                                                <img src="images/sponsors/MOTIE_logo.png" class="img-sponsor" />
-                                            </div>
-                                        </div><!--//col-6-->
-                                        <!---->
-                                        <div class="col-xs-6">
-                                            <div class="sponsor-box">
-                                                <div class="caption"><p class="text-center">Department of Defense</p></div>
-                                                <img src="images/sponsors/DOD_logo.png" class="img-sponsor" />
-                                            </div>
-                                        </div><!--//col-6-->
-                                    </div><!--/col-12-->
-                                </div>
-                            </div><!--//col-8-->
-
-                            <div class="col-sm-3">
-                                <div class="caption"><p class="text-center">Northeastern University</p></div>
-                                <img src="images/sponsors/NEU_logo.png" class="img-sponsor-big" />
-                            </div><!--//col-4-->
-
-                        </div><!--//row-->
-
-                    </div><!--//sponsors-container-->
-                </div><!--//footer-content-->
-
-                <div class="bottom-bar">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <small class="col-xs-12">Copyright &copy; 2015 Jung's Research Group. All Rights Reserved.</small>
-                        </div><!--//row-->
-                    </div><!--//container-->
-                </div><!--//bottom-bar-->
-            </div>
-        </div>
+        <div class="bottom-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <small class="col-xs-12 text-center">Copyright &copy; 2015 Jung's Research Group. All Rights Reserved.</small>
+                </div><!--//row-->
+            </div><!--//container-->
+        </div><!--//bottom-bar-->
     </footer><!--//footer-->
     <!---->
     <!-- Bootstrap core Javascript -->
     <!-- Placed at the bottom so pages load faster -->
     <script src="js/jquery.min.js"></script><!--Faster Loading for below-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/shrinkNav.js"></script>
 </body><!--//body-->
     <!---->
 </html>

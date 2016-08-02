@@ -56,7 +56,10 @@
 .b-tb{
     border-right:none;
     border-left:none;
-
+}
+.b-br{
+    border-left:none;
+    border-top:none;
 }
 /*radii*/
 .b-round-5px{

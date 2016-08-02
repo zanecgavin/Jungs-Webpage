@@ -7,100 +7,79 @@
 =           Top Nav Formatting                     =
 ==================================================*/
 
-.top-content .navbar-fixed-top .navbar-nav>li{
-    padding-left:5px;
-    padding-right:5px;
-}
-.top-content .navbar-fixed-top .navbar-nav>li>a {
+
+.top-content .navbar-fixed-top .navbar-nav>li>a,
+.top-content .navbar-fixed-top .navbar-justified>li>a {
     color: #444;
     font-size: 15px;
     font-weight: bold;
     text-transform: uppercase;
-}
-.top-content .navbar-fixed-top .navbar-nav>.active>a {
-    color: #444;
+    padding: 5px;
 }
 .top-content .navbar-fixed-top .navbar-toggle .icon-bar {
-    background-color: #444;
+    background-color: #1A4779;
 }
 .top-content .navbar-fixed-top .navbar-toggle {
     background-color: #FFFFFF;
-    border: 1px solid #000000;
-    /*border-top: 1px solid #000000;
-    border-bottom: 1px solid #CC0000;
-    border-left: 1px solid #000000;
-    border-right: 1px solid #CC0000;*/
+    border: 1px solid #1A4779;
 }
 .top-content .navbar-fixed-top .navbar-toggle.collapsed:hover,
 .top-content .navbar-fixed-top .navbar-toggle.collapsed:focus,
 .top-content .navbar-fixed-top .navbar-toggle.collapsed:active {
     background-color: #FFFFFF;
-    border: 1px solid #000000;
-    /*border-top: 1px solid #000000;
-    border-bottom: 1px solid #CC0000;
-    border-left: 1px solid #000000;
-    border-right: 1px solid #CC0000;*/
+    border: 1px solid #1A4779;
     box-shadow: none !important;
     -webkit-box-shadow: none !important;
 }
 .top-content .navbar-fixed-top {
-    background: none !important; 
     border: 0 !important;
-    box-shadow: none !important;
     -webkit-box-shadow: none !important;
-    padding-top: 10px;
-}
-.top-content .navbar .nav .active > a {
-    color: #444 !important;
-    box-shadow: none !important;
-    background-color: #BCBCBC;
-    border-radius: 20px;
-    -webkit-box-shadow: none !important;
-    border: 1px solid #000000;
-    /*border-top: 1px solid #000000;
-    border-bottom: 1px solid #CC0000;
-    border-left: 1px solid #000000;
-    border-right: 1px solid #CC0000;*/
+    padding-top: 0px;
 }
 .top-content .navbar .nav > li > a {
-    color: none !important;
+    color: black !important;
     text-shadow: none !important;
-    border-radius: 20px;
     background-color: #FFFFFF;
-    border: 1px solid #000000;
-    /*border-top: 1px solid #000000;
-    border-bottom: 1px solid #CC0000;
-    border-left: 1px solid #000000;
-    border-right: 1px solid #CC0000;*/
+    padding: 2.5px;
 }
 .top-content .navbar .nav > li > a:hover,
 .top-content .navbar .nav > li > a:focus {
-    color: #444 !important;
-    border: 2px solid #000000;
-    /*border-top: 2px solid #000000;
-    border-bottom: 2px solid #CC0000;
-    border-left: 2px solid #000000;
-    border-right: 2px solid #CC0000;*/
+    color: #1A4779 !important;
 }
 .top-content .navbar .nav .active > a:hover, 
 .top-content .navbar .nav .active > a:focus {
-    color: #444 !important;
+    color: #1A4779 !important;
     box-shadow: none !important;
     background-color: #BCBCBC;
-    border-radius: 20px;
     -webkit-box-shadow: none !important;
-    border: 2px solid #000000;
-    /*border-top: 2px solid #000000;
-    border-bottom: 2px solid #000000;
-    border-left: 2px solid #000000;
-    border-right: 2px solid #000000;*/
 }
-.top-content .navbar-brand h3 {
-    margin: 0;
+.top-content .navbar-brand{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 35px;
+}
+.top-content .navbar-brand img{
+    height: 95px;
+    width: auto;
+}
+
+/*.top-content .navbar-brand h4{
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}*/
+.top-content .navbar-brand h4,
+.top-content .navbar-brand a,
+.top-content .navbar-brand a:hover,
+.top-content .navbar-brand a:focus {
+    margin-bottom: 10px; 
     color: #FFFFFF;
-    background-color: none;
+    background-color: white;
     border: none;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-decoration: none;
 }
 .top-content .navbar-fixed-top .navbar-toggle:hover, 
 .top-content .navbar-fixed-top .navbar-toggle:focus{
@@ -108,19 +87,46 @@
     box-shadow: none !important;
     -webkit-box-shadow: none !important;
 }
+#navbar {
+    background-color: white;
+    border-top: 2px #1A4779 solid;
+    border-bottom: 2px #1A4779 solid;
+    margin-top: 66px;
+}
+/*On scroll down navbar shrinks, js*/
+nav.shrink {
+    background-image: none;
+    background-color: white !important;
+}
+nav.shrink #navbar{
+    margin-top: 20px;
+}
 
+nav.shrink .navbar-brand img{
+    height: 50px;
+}
 
 /*==================================================
 =            Jumbotron Formatting                  =
 ==================================================*/
 .jumbotron {
     /*Background Image*/
-    background-image: url('../images/background/VACNT.jpg');
+    /*background-image: url('../images/background/Full3.png');
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 0px;
+    padding: 50px;*/
 }   
+
+nav{
+    background-image: url('../images/background/Full3.png');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0px!important;
+}   
+}
 
 
 /*==================================================
@@ -129,7 +135,7 @@
 body {
     /*position:relative;
     background-color:white;
-    color: #444; /*default text color*/
+    color: #444; */
     min-width: 300px;
 }
 html,
@@ -143,13 +149,24 @@ body{
 }
 .wrapper{
     min-height: 100%;
-}
-.wrapper .about,
-.wrapper .members,
-.wrapper .research,
-.wrapper .publications{
-    width: 90%;
-}
+}            
+        @media only screen and (min-width : 991px) {
+            .wrapper .home,
+            .wrapper .about,
+            .wrapper .members-title,
+            .wrapper .research,
+            .wrapper .publications{
+                width: 75%;
+
+            }
+            .members{
+                width: 80%;
+            }
+        }
+
+
+
+
 
 /*==================================================
 =            Footer Formatting                     =
@@ -163,9 +180,9 @@ body{
     padding-bottom:5px
 }
 .img-sponsor{
-    max-height: 80px;
+    max-height: 100px;
     width: auto;
-    max-width: 80px;
+    max-width: 100px;
     height: auto;
     display: block;
     margin-left: auto;
@@ -200,11 +217,12 @@ body{
 /*==================================================
 =            General Text Formatting               =
 ==================================================*/
+.blue-title{
+    color: #1A4779;
+}
 .title-text{
     font-weight: bolder;
 }
-
-
 /*==================================================
 =        General Padding/Margin Classses           =
 ==================================================*/
@@ -271,6 +289,9 @@ body{
 
     /*reformats and hides menu and page top for small (sm) screens*/
         @media only screen and (max-width : 991px){
+            .top-content .navbar-brand img{
+                height: 70px;
+            }
             .top-content .navbar-header{
                 float: none;
                 margin-right: -15px !important;
@@ -284,6 +305,7 @@ body{
             .top-content .navbar-nav{
                 float: none !important;
                 margin: 7.5px -15px;
+                
             }
             .top-content .navbar-nav li{
                 padding-top: 2px;
@@ -295,7 +317,7 @@ body{
                 padding: 10px 15px;
 
             }
-            .top-content .navbar-nav li{
+            .top-content .justified li{
                 float: none;
             }
             .top-content .navbar-collapse.collapse.in{
@@ -307,6 +329,13 @@ body{
             }
             .top-content .collapsing{
                 overflow: hidden !important;
+            }
+            .top-content .neu-logo{
+                visibility: hidden;
+            }
+            .top-content{
+                
+                box-sizing:inherit!important;
             }
         }
     /*==========  Mobile First Method  ==========*/
@@ -323,7 +352,6 @@ body{
             padding-left: 15px;
             padding-right: 15px;
         }
-
     }
     /* Extra Small Devices, 'xs' */ 
     @media only screen and (min-width : 480px) {
